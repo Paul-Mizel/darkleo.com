@@ -1,1 +1,450 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DARKLEO – Offizielle Website der dunklen Elektro-Rock Band. Stream unsere Tracks direkt im Browser.">
+    <title>DARKLEO • Offizielle Website</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        :root {
+            --neon: #ff00aa;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 200ms;
+        }
+        
+        .tailwind-ready {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a001f 100%);
+        }
+        
+        .neon-text {
+            text-shadow: 
+                0 0 15px #ff00aa,
+                0 0 30px #ff00aa;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px -15px rgb(255 0 170 / 0.4);
+        }
+        
+        .player {
+            backdrop-filter: blur(20px);
+        }
+        
+        audio {
+            display: none;
+        }
+        
+        .progress-bar {
+            accent-color: #ff00aa;
+        }
+    </style>
+</head>
+<body class="tailwind-ready bg-zinc-950 text-white overflow-x-hidden">
+    
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-3xl shadow-lg shadow-pink-500/50">
+                    ♾️
+                </div>
+                <h1 class="logo-font text-4xl tracking-tighter font-bold text-white">DARK<span class="text-pink-500">LEO</span></h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium">
+                <a href="#start" class="hover:text-pink-400">START</a>
+                <a href="#ueber" class="hover:text-pink-400">ÜBER UNS</a>
+                <a href="#musik" class="hover:text-pink-400">MUSIK</a>
+                <a href="#live" class="hover:text-pink-400">LIVE</a>
+                <a href="#kontakt" class="hover:text-pink-400">KONTAKT</a>
+            </div>
+
+            <div class="flex items-center gap-5">
+                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
+                    <i id="hamburger" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 px-8 py-6">
+            <div class="flex flex-col gap-6 text-lg font-medium">
+                <a href="#start" onclick="toggleMobileMenu()" class="hover:text-pink-400">START</a>
+                <a href="#ueber" onclick="toggleMobileMenu()" class="hover:text-pink-400">ÜBER UNS</a>
+                <a href="#musik" onclick="toggleMobileMenu()" class="hover:text-pink-400">MUSIK</a>
+                <a href="#live" onclick="toggleMobileMenu()" class="hover:text-pink-400">LIVE</a>
+                <a href="#kontakt" onclick="toggleMobileMenu()" class="hover:text-pink-400">KONTAKT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="start" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-3 bg-white/10 px-6 py-3 rounded-3xl backdrop-blur-md border border-pink-500/30">
+                    <div class="w-3 h-3 bg-pink-500 rounded-full animate-pulse"></div>
+                    <span class="uppercase text-sm tracking-widest font-medium">NEUE SINGLE „SCHATTENFEUER“</span>
+                </div>
+                
+                <h1 class="text-7xl md:text-8xl font-bold logo-font tracking-tighter leading-none neon-text">
+                    DARKLEO
+                </h1>
+                <p class="text-3xl text-pink-300 font-light">Dunkle Elektronik.<br>Rohe Emotionen.</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <button onclick="playFeatured()" 
+                            class="bg-pink-600 hover:bg-pink-500 text-white font-semibold px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
+                        <i class="fa-solid fa-play"></i>
+                        JETZT ANHÖREN
+                    </button>
+                    
+                    <a href="#musik" class="border border-white/60 hover:border-pink-400 font-medium px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
+                        <i class="fa-solid fa-music"></i>
+                        ALLE TRACKS
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Visual -->
+            <div class="relative hidden md:flex justify-center">
+                <div class="absolute w-96 h-96 bg-gradient-to-br from-pink-600/30 to-purple-700/30 rounded-[4rem] -rotate-12 blur-3xl"></div>
+                <div class="relative bg-zinc-900/80 backdrop-blur-3xl border border-pink-500/20 rounded-3xl p-8">
+                    <div class="w-80 h-80 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-[160px] shadow-2xl">
+                        ♾️
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-xs tracking-widest">
+            <div class="animate-bounce">↓</div>
+            <span class="text-white/40">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section id="ueber" class="max-w-screen-2xl mx-auto px-8 py-24 border-t border-white/10">
+        <div class="grid md:grid-cols-12 gap-16">
+            <div class="md:col-span-5">
+                <span class="text-pink-400 uppercase tracking-[3px] text-sm">Berlin • 2026</span>
+                <h2 class="text-6xl font-bold logo-font tracking-tighter mt-4">DARKLEO</h2>
+                <p class="mt-8 text-2xl text-white/80">Dunkle Synth-Elektro mit tiefer Emotionalität.</p>
+            </div>
+            <div class="md:col-span-7 text-lg text-white/70 leading-relaxed">
+                <p>
+                    DARKLEO ist eine Berliner Band, die tiefe, atmosphärische Elektronik mit rockigen Elementen und intensiven Vocals verbindet. 
+                    Unsere Musik ist wie ein nächtlicher Spaziergang durch verlassene Straßen – melancholisch, kraftvoll und hypnotisch.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MUSIK SECTION -->
+    <section id="musik" class="bg-black py-24 border-t border-b border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Unsere Tracks</h2>
+            
+            <div id="playlist" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Wird per JavaScript gefüllt -->
+            </div>
+        </div>
+    </section>
+
+    <!-- GLOBAL PLAYER -->
+    <div id="globalPlayer" class="player hidden fixed bottom-0 left-0 right-0 bg-zinc-900/95 border-t border-pink-500/30 shadow-2xl z-[9999] px-6 py-4">
+        <div class="max-w-screen-2xl mx-auto flex items-center gap-6">
+            <!-- Song Info -->
+            <div class="flex items-center gap-4 flex-1 min-w-0">
+                <div id="playerCover" class="w-14 h-14 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">
+                    ♾️
+                </div>
+                <div>
+                    <div id="playerTitle" class="font-semibold text-xl">Song Titel</div>
+                    <div id="playerArtist" class="text-pink-400">DARKLEO</div>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <div class="flex flex-col items-center flex-1 max-w-md">
+                <div class="flex items-center gap-8 mb-3">
+                    <button onclick="prevSong()" class="text-3xl hover:text-pink-400"><i class="fa-solid fa-backward-step"></i></button>
+                    <button onclick="togglePlay()" id="playPauseBtn" class="text-6xl text-pink-500 hover:scale-110">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </button>
+                    <button onclick="nextSong()" class="text-3xl hover:text-pink-400"><i class="fa-solid fa-forward-step"></i></button>
+                </div>
+                
+                <div class="w-full flex items-center gap-3 text-xs text-white/60">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" id="progressBar" value="0" min="0" max="100" 
+                           class="progress-bar flex-1 accent-pink-500 h-1 rounded-full cursor-pointer">
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            
+            <!-- Extra -->
+            <div class="flex items-center gap-6 flex-1 justify-end">
+                <button onclick="toggleMute()" class="text-2xl"><i id="volumeIcon" class="fa-solid fa-volume-high"></i></button>
+                <input type="range" id="volumeSlider" value="80" min="0" max="100" class="progress-bar w-28 accent-pink-500">
+                
+                <button onclick="hidePlayer()" class="text-3xl text-white/50 hover:text-white">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+        
+        <audio id="audioElement" preload="metadata"></audio>
+    </div>
+
+    <!-- LIVE -->
+    <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24 hidden">
+        <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Tour 2026</h2>
+        <div class="space-y-6">
+            <div class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <div class="text-pink-400 font-mono">05. JUNI 2026 • BERLIN</div>
+                    <div class="text-3xl font-semibold">Hole 44</div>
+                </div>
+                <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Tickets</span>
+            </div>
+            <div class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <div class="text-pink-400 font-mono">18. JULI 2026 • HAMBURG</div>
+                    <div class="text-3xl font-semibold">Uebel & Gefährlich</div>
+                </div>
+                <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Tickets</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="bg-black py-24 border-t border-white/10 hidden">
+        <div class="max-w-xl mx-auto px-8 text-center">
+            <h2 class="text-5xl font-bold logo-font tracking-tighter mb-6">Kontakt</h2>
+            <form onsubmit="handleSubmit(event)" class="space-y-8">
+                <input type="email" placeholder="deine@email.de" 
+                       class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none">
+                <textarea placeholder="Deine Nachricht..." rows="5"
+                          class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none"></textarea>
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-pink-600 to-purple-700 py-7 rounded-3xl text-xl font-semibold">
+                    NACHRICHT SENDEN
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-12 border-t border-white/10">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-white/40 text-sm">
+            © 2026 DARKLEO • Alle Rechte vorbehalten
+        </div>
+    </footer>
+
+    <script>
+        // Songs (du kannst die URLs später durch deine eigenen MP3-Dateien ersetzen)
+        const songs = [
+            {
+                id: 1,
+                title: "Dunkelheit",
+                artist: "DARKLEO",
+                url: "https://www.soundhelix.com/content/mp3/Dunkelheit.mp3",
+                duration: "6:08"
+            },
+            {
+                id: 2,
+                title: "Weine nicht",
+                artist: "DARKLEO",
+                url: "https://www.soundhelix.com/examples/mp3/Weine-nicht.mp3",
+                duration: "5:08"
+            },
+            {
+                id: 3,
+                title: "Das Schöne Jahr",
+                artist: "DARKLEO",
+                url: "https://www.soundhelix.com/examples/mp3/das-schoene-jahr.mp3",
+                duration: "6:10"
+            },
+            {
+                id: 4,
+                title: "Regen",
+                artist: "DARKLEO",
+                url: "https://www.soundhelix.com/examples/mp3/Regen.mp3",
+                duration: "5:22"
+            }
+        ]
+
+        let currentSongIndex = 0
+        let audio = null
+        let isPlaying = false
+        let isMuted = false
+
+        function renderPlaylist() {
+            const container = document.getElementById('playlist')
+            container.innerHTML = ''
+            
+            songs.forEach((song, index) => {
+                const html = `
+                <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                    <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                        <i class="fa-solid fa-music"></i>
+                        <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">${song.duration}</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="font-semibold text-xl">${song.title}</div>
+                        <div class="text-pink-400">${song.artist}</div>
+                        <button class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                            ABSPIELEN
+                        </button>
+                    </div>
+                </div>`
+                container.innerHTML += html
+            })
+        }
+
+        function initAudio() {
+            audio = document.getElementById('audioElement')
+            audio.addEventListener('timeupdate', updateProgress)
+            audio.addEventListener('ended', nextSong)
+            audio.addEventListener('loadedmetadata', () => {
+                document.getElementById('duration').textContent = formatTime(audio.duration)
+            })
+        }
+
+        function playSong(index) {
+            currentSongIndex = index
+            const song = songs[index]
+            
+            audio.src = song.url
+            audio.play().then(() => {
+                isPlaying = true
+                updatePlayerUI(song)
+                document.getElementById('globalPlayer').classList.remove('hidden')
+                document.getElementById('globalPlayer').classList.add('flex')
+            })
+        }
+
+        function playFeatured() {
+            playSong(0)
+        }
+
+        function updatePlayerUI(song) {
+            document.getElementById('playerTitle').textContent = song.title
+            document.getElementById('playerArtist').textContent = song.artist
+            document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-pause"></i>`
+        }
+
+        function togglePlay() {
+            if (!audio) return
+            if (isPlaying) {
+                audio.pause()
+                isPlaying = false
+                document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-play"></i>`
+            } else {
+                audio.play()
+                isPlaying = true
+                document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-pause"></i>`
+            }
+        }
+
+        function nextSong() {
+            currentSongIndex = (currentSongIndex + 1) % songs.length
+            playSong(currentSongIndex)
+        }
+
+        function prevSong() {
+            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length
+            playSong(currentSongIndex)
+        }
+
+        function updateProgress() {
+            if (!audio) return
+            const percent = (audio.currentTime / audio.duration) * 100
+            document.getElementById('progressBar').value = percent || 0
+            document.getElementById('currentTime').textContent = formatTime(audio.currentTime)
+        }
+
+        function formatTime(seconds) {
+            if (!seconds) return '0:00'
+            const min = Math.floor(seconds / 60)
+            const sec = Math.floor(seconds % 60)
+            return `${min}:${sec < 10 ? '0' : ''}${sec}`
+        }
+
+        function toggleMute() {
+            if (!audio) return
+            isMuted = !isMuted
+            audio.muted = isMuted
+            document.getElementById('volumeIcon').className = isMuted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high'
+        }
+
+        function hidePlayer() {
+            if (audio) audio.pause()
+            document.getElementById('globalPlayer').classList.add('hidden')
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu')
+            const icon = document.getElementById('hamburger')
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden')
+                icon.classList.replace('fa-bars', 'fa-xmark')
+            } else {
+                menu.classList.add('hidden')
+                icon.classList.replace('fa-xmark', 'fa-bars')
+            }
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault()
+            alert('✅ Deine Nachricht wurde an DARKLEO gesendet!')
+            e.target.reset()
+        }
+
+        // Start
+        window.onload = () => {
+            renderPlaylist()
+            initAudio()
+            
+            // Progress Bar Steuerung
+            document.getElementById('progressBar').addEventListener('input', function() {
+                if (audio) audio.currentTime = (this.value / 100) * audio.duration
+            })
+            
+            // Volume
+            document.getElementById('volumeSlider').addEventListener('input', function() {
+                if (audio) audio.volume = this.value / 100
+            })
+        }
+    </script>
+</body>
+</html>
