@@ -271,31 +271,99 @@
         const songs = [
             {
                 id: 1,
-                title: "Dunkelheit",
+                title: "Dunkelheit (Duett)",
                 artist: "DARKLEO",
-                url: "https://www.darkleo.com/content/mp3/dunkelheit.mp3",
+                url: "content/mp3/dunkelheit.mp3",
+                img: "content/mp3/dunkelheit.jpg",
                 duration: "6:08"
             },
             {
                 id: 2,
                 title: "Weine nicht",
                 artist: "DARKLEO",
-                url: "https://www.darkleo.com/content/mp3/weine-nicht.mp3",
+                url: "content/mp3/weine-nicht.mp3",
+                img: "content/mp3/weine-nicht.jpg",
                 duration: "5:08"
             },
             {
                 id: 3,
                 title: "Das Schöne Jahr",
                 artist: "DARKLEO",
-                url: "https://www.darkleo.com/content/mp3/das-schoene-jahr.mp3",
+                url: "content/mp3/das-schoene-jahr.mp3",
+                img: "content/mp3/das-schoene-jahr.jpg",
                 duration: "6:10"
             },
             {
                 id: 4,
                 title: "Regen",
                 artist: "DARKLEO",
-                url: "https://www.darkleo.com/content/mp3/regen.mp3",
+                url: "content/mp3/regen.mp3",
+                img: "content/mp3/regen.jpg",
                 duration: "5:22"
+            },
+            {
+                id: 5,
+                title: "Autarkie (Duett)",
+                artist: "DARKLEO",
+                url: "content/mp3/autarkie.mp3",
+                img: "content/mp3/autarkie.jpg",
+                duration: "4:29"
+            },        
+            {
+                id: 6,
+                title: "Narben",
+                artist: "DARKLEO",
+                url: "content/mp3/narben.mp3",
+                img: "content/mp3/narben.jpg",
+                duration: "5:00"
+            },        
+            {
+                id: 7,
+                title: "Krieg",
+                artist: "DARKLEO",
+                url: "content/mp3/krieg.mp3",
+                img: "content/mp3/krieg.jpg",
+                duration: "5:19"
+            },        
+            {
+                id: 8,
+                title: "Schlaflose Nacht",
+                artist: "DARKLEO",
+                url: "content/mp3/schlaflose-nacht.mp3",
+                img: "content/mp3/schlaflose-nacht.jpg",
+                duration: "6:43"
+            },        
+            {
+                id: 9,
+                title: "Freundschaft (Duett)",
+                artist: "DARKLEO",
+                url: "content/mp3/freundschaft.mp3",
+                img: "content/mp3/freundschaft.jpg",
+                duration: "4:10"
+            },        
+            {
+                id: 10,
+                title: "Digitale Drogen",
+                artist: "DARKLEO",
+                url: "content/mp3/digitale-drogen.mp3",
+                img: "content/mp3/digitale-drogen.jpg",
+                duration: "4:49"
+            },        
+            {
+                id: 11,
+                title: "Die letzte Sucht (Duett)",
+                artist: "DARKLEO",
+                url: "content/mp3/die-letzte-sucht-duett.mp3",
+                img: "content/mp3/die-letzte-sucht-duett.jpg",
+                duration: "4:30"
+            },        
+            {
+                id: 12,
+                title: "Das eine Jahr (Duett)",
+                artist: "DARKLEO",
+                url: "content/mp3/das-eine-jahr.mp3",
+                img: "content/mp3/das-eine-jahr.jpg",
+                duration: "5:19"
             }
         ]
 
@@ -312,6 +380,7 @@
                 const html = `
                 <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
                     <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                        <img src="${song.img}" style="position: absolute;top: -108px;opacity: 0.5;">
                         <i class="fa-solid fa-music"></i>
                         <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">${song.duration}</div>
                     </div>
