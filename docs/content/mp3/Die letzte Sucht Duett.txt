@@ -8,6 +8,9 @@ Slow Dark Alternative Rock Duet, Deep Baritone Male & Atmospheric Female Vocals,
 Dark Alternative Rock Duet, Deep Baritone Male & Fragile Glass-like Soprano, 90 BPM, Slow Orchestral Swells, Distorted Cello, Atmospheric Shards of Sound, Melancholic Piano
 
 
+
+[Dark Minimalist Rock, Deep Velvet Baritone & Fragile Glass-like Soprano, 75 BPM, Slow Orchestral Swells, Distorted Cello, Atmospheric Shards of Sound]
+
 [Intro: The sound of glass breaking in slow motion, followed by a deep, hollow bass pulse. A cold piano melody tinkles in the high register.]
 Koffein weckt nur den Körper auf, 
 doch Liebe nimmt den Geist in Kauf.
@@ -47,7 +50,7 @@ Ein Erstickungs... tanz.
 Wir tauschen unsre Freiheit gegen Ketten aus Kristall,
 jeder Höhenflug ein Echo vom gigantischen Zerfall.
 Man wird geboren, um die Vernunft zu opfern,
-während wir die Sucht in uns entziffern.
+wärend wir uns das Blutt eintauschen bei den Vekäufern.
 
 [Bridge]
 (Male - Whispered): Ist sie es wert?
@@ -72,5 +75,6 @@ weil du durch sie verloren bist.
 (Male – Deep, dying echo): Die letzte Sucht....
 (Female – Shivering whisper): Nur... Splitter...
 (Male): Die letzte Sucht.
+(Female – Shivering whisper): Nur... ein Gewitter...
 
 [End: A final, high piano note cut short by a low, distorted bass drone. Silence.]
