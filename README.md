@@ -2,6 +2,7 @@
 
 # Song Styles
 
+```
 Drake: Hip-hop, trap, laid-back male vocals, ambient beats
 Bruno Mars: Funk-pop blend, groovy rhythms, male vocals, danceable
 Fleetwood Mac: Classic rock, mellow harmonies, emotional, 70s vibe
@@ -168,7 +169,7 @@ gregorian chorale, choir, carried singing, epic, majestic, ecclesiastical
 math rock, J-pop, mutation funk, bounce drop, dubstep, edm, 160bpm,
 anime opening, heavy metal, male vocal
 Pentatonic Scale, Modern Classic, Game Music, Guzheng & Piano & Chinese Drum & Cello, Slow, Sad, Mellow
-
+```
 
 # Song Syntax
 
