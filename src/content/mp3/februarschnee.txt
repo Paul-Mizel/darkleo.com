@@ -1,64 +1,64 @@
-februarschnee
+dunfebruarschnee
 
-[Style: Melodic Dark Rock Ballad, Deep Velvet Baritone, 70 BPM, Heavy Piano, Mournful Cello, Atmosphere of Cold and Stillness]
+[Style: Melodic Dark Rock Ballad, Deep Velvet Baritone & Ethereal Female Vocals, 70 BPM, Heavy Piano, Mournful Cello, Atmosphere of Cold and Stillness]
 
 [Intro: A lonely, repetitive piano key, like a falling snowflake. A deep, breathing cello set in.]
 
 [Verse 1]
 (Bariton, leise und brüchig):
-Es war Februar, die Welt war weiß und schwer,
-du kamst von der Arbeit, dein Herz schlug nicht mehr.
-Erschöpft vor der Tür, wo der Schnee alles begrub,
-eiskalt der Wind, der dich aus dem Leben hob.
-Ich verdanke dir alles, was ich heute bin,
-doch ohne dein Licht macht das Gehen kaum Sinn.
+(Male): Es war Februar, die Welt war weiß und schwer,
+(Male): du kamst von der Arbeit, dein Herz schlug nicht mehr.
+(Male): Ich verdanke dir alles, was ich heute bin,
+(Male): doch ohne dein Licht macht das Gehen kaum Sinn.
 
 [Verse 2]
 (Etwas fester, voller Wehmut):
-Ich warte auf den Anruf, der niemals mehr kommt,
-die Stille im Haus ist, als ob da niemand wohnt,
-Kein Tee mehr mit dir, keine Reise ans Meer,
-ich dachte an „später“ – jetzt ist das „Später“ so leer.
-Ich hab es verschoben, ich dachte, wir hätten noch Zeit,
-jetzt bleibt mir nur diese unendliche Reue und Einsamkeit.
-Doch solange mein Puls noch in meinen Adern schlägt,
-bist du die Kraft, die mich durch das Dunkle trägt.
+(Male): Ich warte auf den Anruf, der niemals mehr kommt,
+(Male): die Stille im Haus ist, als ob da niemand wohnt,
+(Male): Kein Tee mehr mit dir, keine Reise ans Meer,
+(Male): ich dachte an „später“ – jetzt ist das „Später“ so leer.
+(Female): Ich hab es verschoben, ich dachte, wir hätten noch Zeit,
+(Female): jetzt bleibt mir nur diese unendliche Reue und Einsamkeit.
+(Female): Doch solange mein Puls noch in deinen Adern schlägt,
+(Female): bist du die Kraft, die mich durch das Dunkle trägt.
 
 [Chorus]
 (Melodisch, warm und sehr getragen):
-Solange ich lebe, lebst du tief in mir,
-ein Teil meiner Seele gehört für immer nur dir.
-Die Erinnerung ist alles, was ich von uns hab,
-sie blüht wie eine Rose auf dem kalten Grab.
-Ich verliere dich nicht, auch wenn du fern von mir bist,
-weil mein Herz deinen Namen niemals vergisst.
+(Male): Solange ich lebe, lebst du tief in mir,
+(Male): ein Teil meiner Seele gehört für immer nur dir.
+(Female): Die Erinnerung ist alles, was ich von uns hab,
+(Female): sie blüht wie eine Rose auf dem kalten Grab.
+(Male): Ich verliere dich nicht, auch wenn du fern von mir bist,
+(Male): weil mein Herz deinen Namen niemals vergisst.
 
 [Verse 3]
 (Dunkel und erzählerisch):
-In den Tiefen meines Herzens ist dein Name eingebrannt,
-ein Ort, den kein Fremder in diesem Leben je fand.
-Du warst mein Gesetz, meine Grenze, mein Halt,
-jetzt ist es hier drinnen ohne deine Wärme so kalt.
-Ich ziehe meine Kreise, ich gehe meinen Gang,
-begleitet von deinem unendlichen Gesang.
-Keiner kann mich blenden, kein Wort mich mehr rühren,
-ich kann deine Nähe in der Stille noch spüren.
+(Male): In den Tiefen meines Herzens ist dein Name eingebrannt,
+(Male): ein Ort, den kein Fremder in diesem Leben je fand.
+(Male): Du warst mein Gesetz, meine Grenze, mein Halt,
+(Male): jetzt ist es hier drinnen ohne deine Wärme so kalt.
+(Female): Ich ziehe meine Kreise, ich gehe meinen Gang,
+(Female): begleitet von deinem Gesang.
+(Female): Keiner kann mich blenden, kein Wort mich mehr rühren,
+(Female): ich kann deine Nähe in der Stille noch spüren.
 
 [Bridge]
 (Sehr langsam, fast geflüstert):
-Was für ein Tag, was für eine Nacht,
-als die Welt im Schnee ihre Augen zugemacht.
-Ich gehe weiter, Schritt für Schritt durch das Grau,
-dass ich dich ewig liebe, weiß ich nun genau.
+(Male): Was für ein Tag, was für eine Nacht,
+(Male): als die Welt im Schnee ihre Augen zugemacht.
+(Male): Ich gehe weiter, Schritt für Schritt durch das Grau,
+(Male): dass ich dich ewig liebe, weiß ich genau.
 
 [Final Chorus]
 (Mit orchestraler Fülle, aber ohne zu schreien):
-Solange ich lebe, lebst du tief in mir,
-ein Teil meiner Seele gehört für immer nur dir.
-Die Erinnerung ist alles, was ich von uns hab,
-sie blüht wie eine Rose auf dem kalten Grab.
-Ich verliere dich nicht, auch wenn du fern von mir bist,
-weil mein Herz deinen Namen niemals vergisst.
+(Male): Solange ich lebe, lebst du tief in mir,
+(Male): ein Teil meiner Seele gehört für immer nur dir.
+(Female): Die Erinnerung ist alles, was ich von uns hab,
+(Female): sie blüht wie eine Rose auf dem kalten Grab.
+(Male): Ich verliere dich nicht, auch wenn du fern von mir bist,
+(Male): weil mein Herz deinen Namen niemals vergisst.
+
+[Break]
 
 [Outro]
 (Nur noch Klavier, Bariton wird immer leiser):
@@ -66,6 +66,6 @@ Der Tee wird kalt.
 Der Schnee bleibt liegen.
 Du bist in mir...
 ...und ich werde dich immer lieben.
-Mam.
+(Male): Mama.
 
 [End: The piano fades into a soft, ambient wind sound. Silence.]

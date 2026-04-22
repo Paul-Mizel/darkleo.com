@@ -1,5 +1,5 @@
 Titel: Die letzte Sucht
-[Style: Slow Dark Rock, Intimate Baritone Vocals, Deep Atmosphere, Heavy Reverb, Slow Heartbeat Drum, Distorted Guitar Swells]
+[Style: Slow Dark Rock, Intimate Baritone Vocals, Deep Atmosphere, Heavy Reverb, Slow Heartbeat Drum, Distorted Guitar Swells, 80 BPM, Gentle Orchestral Strings]
 
 [Verse 1: Spoken-word style, dark and intimate]
 Koffein weckt nur den Körper auf,
@@ -13,7 +13,7 @@ du wirst an ihrer Schönheit untergehen.
 
 [Chorus: Slow, heavy, melodic and mournful]
 Liebe ist die letzte Sucht,
-die Hoffnung liegt in dieser Flucht.
+die Hoffnung liegt in ihrer Flucht.
 Ein Abgrund, der die Seele frisst,
 weil du durch sie verloren bist.
 Kein Ausweg aus der dunklen Schlucht,
@@ -25,7 +25,6 @@ nur blind in ihr Verderben laufen.
 Sie gibt dem Leben einen Sinn,
 doch nimmt am Ende alles hin.
 Was bleibt, wenn das Gefühl erfriert?
-Wenn man im Hass das Licht verliert?
 Ein leeres Wort, ein stiller Ort,
 und mit dem Tod geht alles fort.
 
