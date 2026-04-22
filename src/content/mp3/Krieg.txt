@@ -1,38 +1,28 @@
-[Style: Dark Alternative Rock, Nu-Metal influence, Emotional Baritone Vocals, Gritty Guitar Riffs, Emotional Orchestral Strings, Heavy and Raw]
+[Style: Dark Alternative Rock, Nu-Metal influence, Emotional Baritone Vocals, Gritty Guitar Riffs, Emotional Orchestral Strings, Heavy and Raw, 135 BPM]
 
-[Intro: Distorted radio static, a haunting violin melody, sudden heavy guitar hit]
+[Intro: Short Distorted radio static, a haunting violin melody, sudden heavy guitar hit]
 Hass ist der Funke, der die Welt in Brand steckt,
 Hinter Glaubenspfaden wird der Mord nur versteckt.
-
-[Verse 1]
-Keiner versteht mehr, alle folgen dem Wahn,
-Und das Ende kommt zu früh auf der blutigen Bahn.
-Im Parlament sitzen sie, in Seide und Gold,
-Reden von Freiheit, doch sie sind dem Teufel nur hold.
-Sie regieren mit Phrasen, sie spielen mit Macht,
-Weil keiner von ihnen an die Gräber hier dacht’.
-
-[Pre-Chorus]
 Heiß ist das Blut, ob nun schwarz oder weiß,
 Es färbt die Erde rot – das ist der ewige Preis.
 Politik versagt, wenn das Wort nichts mehr zählt,
 Dann wird das Gewehr als die Antwort gewählt.
 
-[Guitar Solo: Chaotic, weeping high notes]
-
-[Chorus: Melodic, Soaring, Maximum Emotional Power]
-Was wiegt ein Leben im staubigen Spiel?
-Ein bleiches Foto ist das einzige Ziel.
-Mütter, sie weinen in der Stille der Nacht,
-Um Seelen, die Hochmut um das Leben gebracht.
+[Pre-Chorus]
+Mütter, sie weinen, der Himmel wird rot,
+fremde Befehle brachten den Tod.
 Ein Sieg ist nur Asche, die im Wind bald verweht,
 Wenn über den Gräbern nur das Schweigen noch steht.
 
-[Verse 2]
+[Chorus: Melodic, Soaring, Maximum Emotional Power]
+Im Parlament sitzen sie, in Seide und Gold,
+Reden von Freiheit, doch die Wahrheit ist tot.
 Mächte töten Menschen, Mächte führen den Krieg,
 Und verkaufen uns Lügen als den kommenden Sieg.
-Sie reden von „Befreiung“, von „Diktatorensturz“,
-Doch das Leben der Armen ist ihnen zu kurz.
+
+[Guitar Solo: Chaotic, weeping high notes]
+
+[Verse 1]
 Wer nur die Zeitung liest, wer nur zusieht, hat Schuld,
 Wir opfern die Jugend auf dem Altar der Geduld.
 Keiner redet so deutlich, der nicht im Schlamm lag,
@@ -41,25 +31,21 @@ Und das Sterben der Freunde sah am helllichten Tag.
 [Bridge: Music slows down, voice breaking with emotion]
 Du siehst deinen Freund dort im Graben nun liegen,
 Soll das der Preis sein, um am Ende zu siegen?
-Die Landestreue bricht, der Zweifel erwacht,
-In dieser gottlosen, mörderischen Nacht.
 Du hoffst auf Vergebung, wenn du heimkehrst zum Glück,
-Doch dein Gewissen... es kehrt niemals zurück.
-
-[Guitar Solo: Chaotic, weeping high notes]
+Doch dein Gewissen... das kehrt niemals zurück.
 
 [Final Chorus: Maximum Intensity, layered vocals]
-Was wiegt ein Leben im staubigen Spiel?
-Ein bleiches Foto ist das einzige Ziel.
-Mütter, sie weinen in der Stille der Nacht,
-Um Seelen, die Hochmut um das Leben gebracht.
-Ein Sieg ist nur Asche, die im Wind bald verweht,
-Wenn über den Gräbern nur das Schweigen noch steht.
+Im Parlament sitzen sie, in Seide und Gold,
+Reden von Freiheit, doch die Wahrheit ist tot.
+Mächte töten Menschen, Mächte führen den Krieg,
+Und verkaufen uns Lügen als den kommenden Sieg.
+
+[Guitar Solo: Chaotic, weeping high notes]
 
 [Outro: Minimalist piano, fading heartbeat, wind noise]
 Blut für Öl...
 Die Toten im Graben...
 Was bleibt danach?
-Nur die Leere im Magen.
+Der Gewinn auf den Konten der Reichen.
 
 [Sudden silence]
