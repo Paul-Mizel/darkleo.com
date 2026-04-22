@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DARKLEO – Offizielle Website der dunklen Elektro-Rock Band. Stream unsere Tracks direkt im Browser.">
+    <meta name="description"
+        content="DARKLEO – Offizielle Website der dunklen Elektro-Rock Band. Stream unsere Tracks direkt im Browser.">
     <title>DARKLEO • Offizielle Website</title>
-    
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
-        
+
         :root {
             --neon: #ff00aa;
         }
-        
+
         * {
             transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-duration: 200ms;
         }
-        
+
         .tailwind-ready {
             font-family: 'Inter', system_ui, sans-serif;
         }
-        
+
         .logo-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-        
+
         .hero-bg {
             background: linear-gradient(135deg, #0a0a0a 0%, #1a001f 100%);
         }
-        
+
         .neon-text {
-            text-shadow: 
+            text-shadow:
                 0 0 15px #ff00aa,
                 0 0 30px #ff00aa;
         }
-        
+
         .card-hover:hover {
             transform: translateY(-10px);
             box-shadow: 0 30px 60px -15px rgb(255 0 170 / 0.4);
         }
-        
+
         .player {
             backdrop-filter: blur(20px);
         }
-        
+
         audio {
             display: none;
         }
-        
+
         .progress-bar {
             accent-color: #ff00aa;
         }
+
+        .text-6xl {
+            font-size: 2.75rem !important;
+        }
     </style>
 </head>
+
 <body class="tailwind-ready bg-zinc-950 text-white overflow-x-hidden">
-    
+
     <!-- NAVBAR -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-xl border-b border-white/10">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
             <!-- Logo -->
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-br to-purple-700 rounded-2xl flex items-center justify-center text-3xl shadow-pink-500/50">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br to-purple-700 rounded-2xl flex items-center justify-center text-3xl shadow-pink-500/50">
                     &#x264C;
                 </div>
-                <h1 class="logo-font text-4xl tracking-tighter font-bold logo-font tracking-tighter leading-none neon-text">DARK<span class="text-pink-500">LEO</span></h1>
+                <h1
+                    class="logo-font text-4xl tracking-tighter font-bold logo-font tracking-tighter leading-none neon-text">
+                    DARK<span class="text-pink-500">LEO</span></h1>
             </div>
 
             <!-- Desktop Menu -->
@@ -82,16 +92,16 @@
             </div>
 
             <div class="flex items-center gap-5">
-                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>
+                <!--<a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>-->
                 <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
                 <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
-                
+
                 <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
                     <i id="hamburger" class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-black/95 border-t border-white/10 px-8 py-6">
             <div class="flex flex-col gap-6 text-lg font-medium">
@@ -106,44 +116,51 @@
     <section id="start" class="hero-bg min-h-screen flex items-center pt-20">
         <div class="max-w-screen-2xl mx-auto px-8 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-8">
-                <div class="inline-flex items-center gap-3 bg-white/10 px-6 py-3 rounded-3xl backdrop-blur-md border border-pink-500/30">
+                <div
+                    class="inline-flex items-center gap-3 bg-white/10 px-6 py-3 rounded-3xl backdrop-blur-md border border-pink-500/30">
                     <div class="w-3 h-3 bg-pink-500 rounded-full animate-pulse"></div>
-                    <span class="uppercase text-sm tracking-widest font-medium">NEUE SINGLE "Sternenmeer"</span>
+                    <span class="uppercase text-sm tracking-widest font-medium">NEUE SINGLE "Alter Mann"</span>
                 </div>
-                
+
                 <h1 class="text-7xl md:text-8xl font-bold logo-font tracking-tighter leading-none neon-text">
                     DARK<span class="text-pink-500">LEO</span>
                 </h1>
                 <p class="text-3xl text-pink-300 font-light">Dunkle Elektronik.<br>Rohe Emotionen.</p>
-                
+
                 <div class="flex flex-wrap gap-4">
-                    <button onclick="playFeatured()" 
-                            class="bg-pink-600 hover:bg-pink-500 text-white font-semibold px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
+                    <button onclick="playFeatured()"
+                        class="bg-pink-600 hover:bg-pink-500 text-white font-semibold px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
                         <i class="fa-solid fa-play"></i>
                         JETZT ANHÖREN
                     </button>
-                    
-                    <a href="#musik" class="border border-white/60 hover:border-pink-400 font-medium px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
+
+                    <a href="#musik"
+                        class="border border-white/60 hover:border-pink-400 font-medium px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
                         <i class="fa-solid fa-music"></i>
                         ALLE TRACKS
                     </a>
                 </div>
             </div>
-            
+
             <!-- Hero Visual -->
             <div class="relative hidden md:flex justify-center">
-                <div class="absolute w-96 h-96 bg-gradient-to-br from-pink-600/30 to-purple-700/30 rounded-[4rem] -rotate-12 blur-3xl"></div>
+                <div
+                    class="absolute w-96 h-96 bg-gradient-to-br from-pink-600/30 to-purple-700/30 rounded-[4rem] -rotate-12 blur-3xl">
+                </div>
                 <div class="relative bg-zinc-900/80 backdrop-blur-3xl border border-pink-500/20 rounded-3xl p-8">
-                    <div class="w-80 h-80 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-[160px] shadow-2xl">
+                    <div
+                        class="w-80 h-80 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-[160px] shadow-2xl">
                         &#x264C;
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-xs tracking-widest">
-            <div class="animate-bounce">↓</div>
-            <span class="text-white/40">SCROLL</span>
+            <a href="#musik">
+                <div class="animate-bounce">↓</div>
+                <span class="text-white/40">SCROLL</span>
+            </a>
         </div>
     </section>
 
@@ -152,13 +169,16 @@
         <div class="grid md:grid-cols-12 gap-16">
             <div class="md:col-span-5">
                 <span class="text-pink-400 uppercase tracking-[3px] text-sm">Deutschland • 2026</span>
-                <h2 class="text-6xl font-bold logo-font tracking-tighter mt-4">DARK<span class="text-pink-500">LEO</span></h2>
+                <h2 class="text-6xl font-bold logo-font tracking-tighter mt-4">DARK<span
+                        class="text-pink-500">LEO</span></h2>
                 <p class="mt-8 text-2xl text-white/80">Dunkle Synth-Elektro mit tiefer Emotionalität.</p>
             </div>
             <div class="md:col-span-7 text-lg text-white/70 leading-relaxed">
                 <p>
-                    DARKLEO ist eine Band, die tiefe, atmosphärische Elektronik mit rockigen Elementen und intensiven Vocals verbindet. 
-                    Unsere Musik ist wie ein nächtlicher Spaziergang durch verlassene Straßen – melancholisch, kraftvoll und hypnotisch.
+                    DARKLEO ist eine Band, die tiefe, atmosphärische Elektronik mit rockigen Elementen und intensiven
+                    Vocals verbindet.
+                    Unsere Musik ist wie ein nächtlicher Spaziergang durch verlassene Straßen – melancholisch, kraftvoll
+                    und hypnotisch.
                 </p>
             </div>
         </div>
@@ -168,7 +188,7 @@
     <section id="musik" class="bg-black py-24 border-t border-b border-white/10">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Unsere Tracks</h2>
-            
+
             <div id="playlist" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Wird per JavaScript gefüllt -->
             </div>
@@ -176,48 +196,54 @@
     </section>
 
     <!-- GLOBAL PLAYER -->
-    <div id="globalPlayer" class="player hidden fixed bottom-0 left-0 right-0 bg-zinc-900/95 border-t border-pink-500/30 shadow-2xl z-[9999] px-6 py-4">
+    <div id="globalPlayer"
+        class="player hidden fixed bottom-0 left-0 right-0 bg-zinc-900/95 border-t border-pink-500/30 shadow-2xl z-[9999] px-6 py-4">
         <div class="max-w-screen-2xl mx-auto flex items-center gap-6">
             <!-- Song Info -->
             <div class="flex items-center gap-4 flex-1 min-w-0">
-                <div id="playerCover" class="w-14 h-14 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">
+                <div id="playerCover"
+                    class="hidden md:flex w-14 h-14 bg-gradient-to-br rounded-2xl flex items-center justify-center text-4xl flex-shrink-0">
                     &#x264C;
                 </div>
-                <div>
+                <div class="class="hidden md:flex">
                     <div id="playerTitle" class="font-semibold text-xl">Song Titel</div>
                     <div id="playerArtist" class="text-pink-400">DARKLEO</div>
                 </div>
             </div>
-            
+
             <!-- Controls -->
             <div class="flex flex-col items-center flex-1 max-w-md">
                 <div class="flex items-center gap-8 mb-3">
-                    <button onclick="prevSong()" class="text-3xl hover:text-pink-400"><i class="fa-solid fa-backward-step"></i></button>
-                    <button onclick="togglePlay()" id="playPauseBtn" class="text-6xl text-pink-500 hover:scale-110">
+                    <button onclick="prevSong()" class="text-3xl hover:text-pink-400"><i
+                            class="fa-solid fa-backward-step"></i></button>
+                    <button onclick="togglePlay()" id="playPauseBtn" class="text-4xl text-pink-500 hover:scale-110">
                         <i class="fa-solid fa-circle-play"></i>
                     </button>
-                    <button onclick="nextSong()" class="text-3xl hover:text-pink-400"><i class="fa-solid fa-forward-step"></i></button>
+                    <button onclick="nextSong()" class="text-3xl hover:text-pink-400"><i
+                            class="fa-solid fa-forward-step"></i></button>
                 </div>
-                
+
                 <div class="w-full flex items-center gap-3 text-xs text-white/60">
-                    <span id="currentTime">0:00</span>
-                    <input type="range" id="progressBar" value="0" min="0" max="100" 
-                           class="progress-bar flex-1 accent-pink-500 h-1 rounded-full cursor-pointer">
-                    <span id="duration">0:00</span>
+                    <span id="currentTime" style="font-family: monospace;">0:00</span>
+                    <input type="range" id="progressBar" value="0" min="0" max="100"
+                        class="progress-bar flex-1 accent-pink-500 h-1 rounded-full cursor-pointer">
+                    <span id="duration" style="font-family: monospace;">0:00</span>
                 </div>
             </div>
-            
+
             <!-- Extra -->
             <div class="flex items-center gap-6 flex-1 justify-end">
-                <button onclick="toggleMute()" class="text-2xl"><i id="volumeIcon" class="fa-solid fa-volume-high"></i></button>
-                <input type="range" id="volumeSlider" value="80" min="0" max="100" class="progress-bar w-28 accent-pink-500">
-                
-                <button onclick="hidePlayer()" class="text-3xl text-white/50 hover:text-white">
+                <button onclick="toggleMute()" class="text-xl"><i id="volumeIcon"
+                        class="fa-solid fa-volume-high"></i></button>
+                <input type="range" id="volumeSlider" value="80" min="0" max="100"
+                    class="progress-bar w-10 accent-pink-500">
+
+                <button onclick="hidePlayer()" class="hidden md:flex text-3xl text-white/50 hover:text-white">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
         </div>
-        
+
         <audio id="audioElement" preload="metadata"></audio>
     </div>
 
@@ -225,14 +251,16 @@
     <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24 hidden">
         <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Tour 2026</h2>
         <div class="space-y-6">
-            <div class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div
+                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
                     <div class="text-pink-400 font-mono">05. JUNI 2026 • BERLIN</div>
                     <div class="text-3xl font-semibold">Hole 44</div>
                 </div>
                 <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Tickets</span>
             </div>
-            <div class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+            <div
+                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div>
                     <div class="text-pink-400 font-mono">18. JULI 2026 • HAMBURG</div>
                     <div class="text-3xl font-semibold">Uebel & Gefährlich</div>
@@ -247,12 +275,12 @@
         <div class="max-w-xl mx-auto px-8 text-center">
             <h2 class="text-5xl font-bold logo-font tracking-tighter mb-6">Kontakt</h2>
             <form onsubmit="handleSubmit(event)" class="space-y-8">
-                <input type="email" placeholder="deine@email.de" 
-                       class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none">
+                <input type="email" placeholder="deine@email.de"
+                    class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none">
                 <textarea placeholder="Deine Nachricht..." rows="5"
-                          class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none"></textarea>
-                <button type="submit" 
-                        class="w-full bg-gradient-to-r from-pink-600 to-purple-700 py-7 rounded-3xl text-xl font-semibold">
+                    class="w-full bg-white/10 border border-white/30 focus:border-pink-400 rounded-3xl px-8 py-6 outline-none"></textarea>
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-pink-600 to-purple-700 py-7 rounded-3xl text-xl font-semibold">
                     NACHRICHT SENDEN
                 </button>
             </form>
@@ -308,7 +336,7 @@
                 url: "content/mp3/autarkie.mp3",
                 img: "content/mp3/autarkie.jpg",
                 duration: "4:29"
-            },        
+            },
             {
                 id: 6,
                 title: "Narben",
@@ -316,7 +344,7 @@
                 url: "content/mp3/narben.mp3",
                 img: "content/mp3/narben.jpg",
                 duration: "5:00"
-            },        
+            },
             {
                 id: 7,
                 title: "Krieg",
@@ -324,7 +352,7 @@
                 url: "content/mp3/krieg.mp3",
                 img: "content/mp3/krieg.jpg",
                 duration: "5:19"
-            },        
+            },
             {
                 id: 8,
                 title: "Schlaflose Nacht",
@@ -332,7 +360,7 @@
                 url: "content/mp3/schlaflose-nacht.mp3",
                 img: "content/mp3/schlaflose-nacht.jpg",
                 duration: "6:43"
-            },        
+            },
             {
                 id: 9,
                 title: "Freundschaft (Duett)",
@@ -340,7 +368,7 @@
                 url: "content/mp3/freundschaft.mp3",
                 img: "content/mp3/freundschaft.jpg",
                 duration: "4:10"
-            },        
+            },
             {
                 id: 10,
                 title: "Digitale Drogen",
@@ -348,7 +376,7 @@
                 url: "content/mp3/digitale-drogen.mp3",
                 img: "content/mp3/digitale-drogen.jpg",
                 duration: "4:49"
-            },        
+            },
             {
                 id: 11,
                 title: "Die letzte Sucht (Duett)",
@@ -356,7 +384,7 @@
                 url: "content/mp3/die-letzte-sucht-duett.mp3",
                 img: "content/mp3/die-letzte-sucht-duett.jpg",
                 duration: "4:30"
-            },        
+            },
             {
                 id: 12,
                 title: "Das eine Jahr (Duett)",
@@ -364,7 +392,7 @@
                 url: "content/mp3/das-eine-jahr.mp3",
                 img: "content/mp3/das-eine-jahr.jpg",
                 duration: "5:19"
-            },        
+            },
             {
                 id: 13,
                 title: "Februarschnee (Duett)",
@@ -372,7 +400,7 @@
                 url: "content/mp3/februarschnee.mp3",
                 img: "content/mp3/februarschnee.jpg",
                 duration: "5:33"
-            },        
+            },
             {
                 id: 14,
                 title: "Das Digitale Nichts",
@@ -380,6 +408,14 @@
                 url: "content/mp3/das-digitale-nichts.mp3",
                 img: "content/mp3/das-digitale-nichts.jpg",
                 duration: "3:22"
+            },
+            {
+                id: 15,
+                title: "Alter Mann",
+                artist: "DARKLEO",
+                url: "content/mp3/alter-mann.mp3",
+                img: "content/mp3/alter-mann.jpg",
+                duration: "4:44"
             }
         ]
 
@@ -391,7 +427,7 @@
         function renderPlaylist() {
             const container = document.getElementById('playlist')
             container.innerHTML = ''
-            
+
             songs.forEach((song, index) => {
                 const html = `
                 <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
@@ -424,7 +460,7 @@
         function playSong(index) {
             currentSongIndex = index
             const song = songs[index]
-            
+
             audio.src = song.url
             audio.play().then(() => {
                 isPlaying = true
@@ -515,17 +551,18 @@
         window.onload = () => {
             renderPlaylist()
             initAudio()
-            
+
             // Progress Bar Steuerung
-            document.getElementById('progressBar').addEventListener('input', function() {
+            document.getElementById('progressBar').addEventListener('input', function () {
                 if (audio) audio.currentTime = (this.value / 100) * audio.duration
             })
-            
+
             // Volume
-            document.getElementById('volumeSlider').addEventListener('input', function() {
+            document.getElementById('volumeSlider').addEventListener('input', function () {
                 if (audio) audio.volume = this.value / 100
             })
         }
     </script>
 </body>
+
 </html>
