@@ -1,5 +1,15 @@
 # darkleo.com
 
+#My Tools
+Audacity
+https://www.audacityteam.org/
+Ardour
+https://ardour.org/
+freac
+https://www.freac.org/
+mp3tag
+https://www.mp3tag.de/
+
 # Song Styles
 
 ```
@@ -74,7 +84,7 @@ Judas Priest: Heavy metal, soaring male vocals, fast riffs, powerful sound
 Slayer: Thrash metal, dark aggression, rapid-fire guitars, male vocals
 Ozzy Osbourne: Heavy metal, dark theatrics, male vocals, dramatic riffs
 
-👉 Access 2,500 more Suno AI prompts here!
+
 
 Skrillex: Dubstep, Electronic, Intense, male vocals
 Calvin Harris: EDM, Dance, Festive, male vocals
@@ -124,7 +134,7 @@ James Blake: Electronic, Soul, Minimalist, male vocals
 The War on Drugs: Indie Rock, Heartland Rock, Melodic
 Sufjan Stevens: Indie Folk, Baroque Pop, Intimate, male vocals
 
-Looking for more artists? I’ve compiled thousands of artists and styles in the official Suno AI prompt guides.
+
 
 Nicolas Jaar: Electronic, Experimental, Atmospheric, male vocals
 Flying Lotus: Electronic, Experimental HipHop, Fusion, male vocals
@@ -259,12 +269,12 @@ These concrete modifiers are most likely to be honored. The same lyrical modifie
 
 For example:
 
-\```
+```csharp
 I am the void between stars
 (Beyond the veil of forms...)
 I am the death of light
 (Where your deepest terrors remain...)
-\```
+```
 
 ## [Interlude]
 
@@ -276,17 +286,17 @@ This is one of the main workhorses of the instrumental tags. It's pretty much wh
 
 Don't get too creative with the modifier tags. For instance, genre-specific modifiers don't really seem to work like `[Psychedelic Interlude]` even though it makes sense to us, the system doesn't seem to recognize it. However, there is another option we have to modify all instrumental sections, and that is periods and exclamations to try and shape the pacing.
 
-\```
+```csharp
 [Melodic Interlude]
 . . . ! . .
 . ! . . . !
-\```
+```
 
-\```
+```csharp
 [Intense Interlude]
 !! . ! !! !
 !! !! ! !!
-\```
+```
 
 And so on. You can arrange the . and ! in any way you like to convey the rhythm and such. 
 
@@ -370,41 +380,41 @@ Generally speaking, the style of the music (not specified in this document) will
 
 These tags can be used in lieu of verse or chorus tags and there can be a lot of flexibility, as these sorts of tags appear in the training data and significantly modify how the song is delivered. 
 
-\```
+```csharp
 [Spoken Word Narration]
 *static* ...final log... coordinates unknown...
 ...oxygen critical... systems failing...
 ...tell earth we made it... we saw such beautiful things...
 ...orion spur expedition... signing off... *static*
-\```
+```
 
 ## Instrument Tags
 
 You can also do somewhat the same with specific instruments. This can serve in lieu of solo or as part of a solo
 
-\```
+```csharp
 [Sad Trombone]
 waah-Waaah-WAAH
-\```
+```
 
-\```
+```csharp
 [Chugging Guitar]
 chuka-chuka-chuka-chuka
-\```
+```
 
-\```
+```csharp
 [Overblown Flute]
-\```
+```
 
-\```
+```csharp
 [Trilling Pennywhistle]
-\```
+```
 
 ## Simple Example
 
 This is a pretty minimalist example which worked really well. The system will fill in a lot of gaps, so you can see you really don't need much. Less is often more, particularly if the STYLE is well defined. 
 
-\```
+```csharp
 [Verse]
 Sun beats down hard dry road
 Dust devils dance shadows long
@@ -440,13 +450,13 @@ Night falls cool winds rise
 Stars blaze across the skies
 Desert whispers truth and lies
 In the silence spirit flies
-\```
+```csharp
 
 ## Intermediate Example
 
 Below is an example of the above song but with a bit more control over the flow. 
 
-\```
+```csharp
 [Long Instrumental Intro]
 
 [Verse]
@@ -492,13 +502,13 @@ Desert whispers truth and lies
 In the silence spirit flies
 
 [Fade to End]
-\```
+```
 
 ## Complex Example
 
 Below is one of the most sophisticated songs that worked well, including multiple movements. 
 
-\```
+```csharp
 [intro]
 . . . ! . .
 . . ! . . .
@@ -610,7 +620,7 @@ forever we endure...
 .
 
 [fade to end]
-\```
+```
 
 ## Styles
 
@@ -673,10 +683,10 @@ The basic rules are:
 
 You should always output songs wrapped in code escape tags. Note, that in this document the document escape tags are themselves escaped for formatting purposes:
 
-\```
+```csharp
 [Verse]
 <lyrics>
-\```
+```
 
 Use proper code escapes without the backslashes, as those escapes are merely present ot ensure proper formatting in the original markdown document. This makes it easier for the user to copy/paste your output exactly. 
 
