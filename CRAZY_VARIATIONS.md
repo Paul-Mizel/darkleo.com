@@ -1,0 +1,3 @@
+
+
+Aggressive industrial-rock with alternating male/female vocals, distorted drum loops, grinding bass synth, and sawtooth leads, Male vocals shouted and barked, female vocals half-sung half-snarled with gang-style doubles on hooks, Choruses explode with layered shouts and bitcrushed backing vox; verses stay tight and rhythmic with stop-start riffs and stuttered glitches, Mix is dense, clipping on purpose, with metallic hits and machine ambience riding the sides, industrial, female vocals
