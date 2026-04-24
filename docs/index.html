@@ -93,8 +93,8 @@
 
             <div class="flex items-center gap-5">
                 <!--<a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>-->
-                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.tiktok.com/@darkleo.official" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
 
                 <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
                     <i id="hamburger" class="fa-solid fa-bars"></i>
@@ -188,8 +188,14 @@
     <section id="musik" class="bg-black py-24 border-t border-b border-white/10">
         <div class="max-w-screen-2xl mx-auto px-8">
             <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Unsere Tracks</h2>
-            <h3 class="text-5xl font-bold logo-font tracking-tighter mb-12">Album "Dunkelheit"</h3>            
+            <h3 class="text-4xl font-bold logo-font tracking-tighter mb-12">Album "Die Dunkelheit"</h3>
             <div id="playlist" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Wird per JavaScript gefüllt -->
+            </div>
+
+            <h3 class="text-4xl font-bold logo-font tracking-tighter mb-12 mt-12">Album "Die Helligkeit"</h3>
+
+            <div id="playlist_2" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Wird per JavaScript gefüllt -->
             </div>
         </div>
@@ -363,14 +369,6 @@
             },
             {
                 id: 9,
-                title: "Freundschaft",
-                artist: "DARKLEO",
-                url: "content/mp3/freundschaft.mp3",
-                img: "content/mp3/freundschaft.jpg",
-                duration: "3:40"
-            },
-            {
-                id: 10,
                 title: "Digitale Psychose",
                 artist: "DARKLEO",
                 url: "content/mp3/digitale-psychose.mp3",
@@ -378,7 +376,7 @@
                 duration: "3:45"
             },
             {
-                id: 11,
+                id: 10,
                 title: "Die letzte Sucht (Duett)",
                 artist: "DARKLEO",
                 url: "content/mp3/die-letzte-sucht-duett.mp3",
@@ -386,7 +384,7 @@
                 duration: "3:54"
             },
             {
-                id: 12,
+                id: 11,
                 title: "Das eine Jahr",
                 artist: "DARKLEO",
                 url: "content/mp3/das-eine-jahr.mp3",
@@ -394,7 +392,7 @@
                 duration: "3:39"
             },
             {
-                id: 13,
+                id: 12,
                 title: "Februarschnee (Duett)",
                 artist: "DARKLEO",
                 url: "content/mp3/februarschnee-duett.mp3",
@@ -402,7 +400,7 @@
                 duration: "4:14"
             },
             {
-                id: 14,
+                id: 13,
                 title: "Das Digitale Nichts",
                 artist: "DARKLEO",
                 url: "content/mp3/das-digitale-nichts.mp3",
@@ -410,7 +408,7 @@
                 duration: "3:22"
             },
             {
-                id: 15,
+                id: 14,
                 title: "Alter Mann",
                 artist: "DARKLEO",
                 url: "content/mp3/alter-mann.mp3",
@@ -418,12 +416,20 @@
                 duration: "4:14"
             },
             {
-                id: 16,
+                id: 15,
                 title: "Seelenlos (Duett)",
                 artist: "DARKLEO",
                 url: "content/mp3/seelenlos-duett.mp3",
                 img: "content/mp3/seelenlos-duett.jpg",
                 duration: "3:36"
+            },
+            {
+                id: 16,
+                title: "Freundschaft",
+                artist: "DARKLEO",
+                url: "content/mp3/freundschaft.mp3",
+                img: "content/mp3/freundschaft.jpg",
+                duration: "3:40"
             },
             {
                 id: 17,
@@ -433,7 +439,13 @@
                 img: "content/mp3/sommer.jpg",
                 duration: "4:34"
             }
-        ]
+        ];
+
+        // Songs (du kannst die URLs später durch deine eigenen MP3-Dateien ersetzen)
+        const songs_2 = [
+
+        ];
+
 
         let currentSongIndex = 0
         let audio = null
@@ -445,6 +457,10 @@
             container.innerHTML = ''
 
             songs.forEach((song, index) => {
+
+                if (index > 14) {
+                    return;
+                }
                 const html = `
                 <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
                     <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
@@ -461,7 +477,31 @@
                     </div>
                 </div>`
                 container.innerHTML += html
-            })
+            });
+
+            const container_2 = document.getElementById('playlist_2');
+            container_2.innerHTML = '';
+            songs.forEach((song, index) => {
+                if (index > 14) {
+                    const html2 = `
+                <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                    <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                        <img src="${song.img}" style="position: absolute;top: -108px;opacity: 0.5;">
+                        <i class="fa-solid fa-music"></i>
+                        <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">${song.duration}</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="font-semibold text-xl">${song.title}</div>
+                        <div class="text-pink-400">${song.artist}</div>
+                        <button class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                            ABSPIELEN
+                        </button>
+                    </div>
+                </div>`;
+                    container_2.innerHTML += html2
+                }
+            });
+
         }
 
         function initAudio() {
