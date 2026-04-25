@@ -1,5 +1,87 @@
 
+##latin
+
+hand claps, flamenco pop fusion, flamenco, rhythmic guitar, passionate male vocals
+
+This high-fidelity hybrid fuses reggaeton, Dominican dembow, EDM, moombahton, and tropical Afro-Latino at 108 BPM, It features syncopated synth plucks, driving congas, crisp güira rhythms, and deep 808 bass, layered under punchy kicks, wide stereo effects, and bold sawtooth leads with heavy sidechain for club energy
+
+## clasic 
+
+olo piano instrumental, intimate Steinway grand piano tone, warm resonant bass, singing middle register, clear but gentle high notes, inspired by the emotional calm of a Chopin nocturne but original modern classical composition, reflective and humane, theme of releasing self-pressure and learning to forgive oneself, spacious rubato, delicate pedal resonance, lyrical phrasing, soft dynamic control, elegant showroom acoustics, emotionally mature, restrained but deeply moving, no orchestra, no vocals, no percussion, pure piano solo, 4 to 6 minutes
+
+A mournful flute leads a melodic melody in a minor key, floating above sparse, reverberant DX7 harp arpeggios that loop in unpredictable, shifting intervals, Sustained pads hold a steady drone, evoking a chant-like, percussionless flow, Soft, fleeting Gregorian chants surface randomly, layering haunting depth
+
+A calm, sleep-inducing composition in deeper tones, rich and warm, Slow piano in the lower register carries the melody, surrounded by deep strings and soft, resonant pads, The harmonies move gently, like a dark lullaby, creating a sense of safety and serenity, Occasional low harp plucks and subtle ambient textures add depth without breaking the stillness, The overall feeling should be dreamy, intimate, and grounding—guiding the listener into peaceful slumber through deep, velvety soundscapes
+
+slow tempo, Japanese koto, shakuhachi, soft taiko, gentle piano, ambient rain sounds, meditative, cinematic, peaceful, calming, emotional, lo-fi textures, ‑no EDM, ‑no trap, ‑no distorted guitars, ‑no heavy drums, ‑no aggressive bass, ‑no techno beats, ‑no chaotic synths, ‑no fast tempo, ‑no overly bright pop
+
+A peaceful instrumental track inspired by Ghibli music, Soft piano or acoustic guitar, ambient pads, subtle flute or strings, no heavy percussion, Calm, relaxing, perfect for studying or working, Length: 5+ minutes, Stars above harmony with subtle piano and spacey reverb, ‑vocars
+
+Use my voice memo with me as the singer, Lullaby, nordic, bagpipes, violin, lyre, harp, guitar
+
+A calm, sleep-inducing composition in deeper tones, rich and warm, Slow piano in the lower register carries the melody, surrounded by deep strings and soft, resonant pads, The harmonies move gently, like a dark lullaby, creating a sense of safety and serenity, Occasional low harp plucks and subtle ambient textures add depth without breaking the stillness, The overall feeling should be dreamy, intimate, and grounding—guiding the listener into peaceful slumber through deep, velvety soundscapes
+
+```
+Genre: Contemporary Piano Solo, Cinematic, Emotional Minimalism  
+Mood: melancholic, introspective, mysterious, fragile beauty  
+Tempo: 70–80 BPM (rubato allowed)  
+Instruments: solo grand piano (Yamaha C7 or Steinway D tone), optional soft ambient reverb, subtle pedal sustain  
+Style: inspired by Yonezu Kenshi × Utada Hikaru “JANE DOE” — delicate phrasing, unresolved harmonies, emotional dissonance, and impressionistic melodic movement  
+Tone: haunting yet tender; explore contrast between light and shadow through dynamic touch and silence  
+Structure:  
+- Intro: sparse, hesitant single notes creating an uncertain mood  
+- Verse: gentle arpeggios with suspended chords (maj7, add9, m9)  
+- Bridge: chromatic tension with emotional crescendo  
+- Outro: gradual decay into silence, final unresolved chord lingering  
+
+Production notes:  
+- Keep resonance natural, with wide stereo space and warm tone  
+- Avoid quantization; allow expressive timing and breathing pauses  
+- Dynamics should rang
+
+````
+
+
+## combos
+
+rap, Hybrid hardcore punk and industrial metal with male vocals: serrated guitars, blast-beat drum programming, and metallic hits under deep screamo, Verses ride locked-in rap cadence over chugging riffs; chorus explodes into shouted gang vocals, Mid-song breakdown drops to filtered guitars and distorted whisper before a final, chaotic wall-of-sound outro, industrial, punk, male vocals, deep, screamo
+
+heavy distortion guitar, dramatic male vocals, downtuned alternative metal riff, post-grunge atmosphere, anthemic emotional rock, powerful dynamic drums, soaring chorus, intense vocal delivery
+
+Industrial R&B fused with dark synth-rock aggression: distorted walls of synth churn against metallic drum machines and guttural bass, Vocals tear between a raw male snarl and distant processed harmonies, drenched in tension and erotic collapse, Guitar growls in the periphery, glitch FX pulse like exposed wires, and every section feels like heat warped by jealousy, fetish, and ruin, The mood is grimy, cinematic, intimate—late-night obsession spiraling under industrial neon, A slow-grind 86 BPM crawl that feels like emotional shrapnel set to rhythm
+
+--Fast
+Progressive metal, complex drumming, eerie, dark, aggressive, smooth male vocals
+
+
+--  genial
+Cinematic  synthwave fused with dark atmospheric metal, Neon-drenched retro 80s synths, pulsing bass, shimmering arpeggios, lush pads, and rain-soaked soundscapes, Layered with orchestral strings, tribal drums, distorted guitars, and ethereal choirs that rise into colossal crescendos, Vocals in a soft yet powerful English accent, shifting from intimate falsetto to soaring intensity, with reverb-soaked harmonies and emotional delivery, The sound is immersive, devotional, and haunting — a fusion of futuristic nostalgia and dramatic ritual energy, Aggressive darksynth, horror synthwave, retro 80s, distorted synth bass, pounding drums, metal riffs, cinematic intensity, industrial energy, fast tempo, brutal cyberpunk atmosphere, Cinematic dark synthwave with pulsing basslines, retro 80s analog synths, minimalist horror atmospheres, cyberpunk textures, tense rhythms, eerie soundscapes, and moody cinematic layers
+
+-- Duett - testen
+emotional choirs, sad, haunting, symphonic metal, metal, tragic, orchestral strings, emotional, heavy guitar riffs, powerful male and female vocals
+
+-- alptraum
+grunge, metal grunge, nu metal, dark, industrial metal, alternative metal, post-grunge, dark vocals, pop rock
+
+
+Raw Emotional Post-Grunge & Nu Metal with powerful female vocals
+
+--cinimatic
+cinematic pop metal fused with modern rock, trap, and dark electronic atmospheres, Heavy 808s, distorted guitars, and trap drums drive a festival-ready pulse, Dense harmonies and twin guitar leads intertwine with orchestral swells, bright arps, galloping djent basslines, slap/fingerstyle grooves, and horror-metal accents, Spacious transitions dissolve into ambient textures, sudden piano ballad interludes, and acid trip-hop breaks, Sweeping strings, epic brass, double kicks, blast beats, intricate cymbals, polished synths, and dramatic club-ready drops all merge in a polished, progressive, hi-fi mix for maximum impact, emotional male vocals with soulful rasp, layered harmonies, dynamic vocal phrasing, progressive EDM, deep bass tech house, soulful baritone vocals, acid trip-hop, alt post-edm calypso, afronoirstep, gothlove, dark electronic pop, cinematic bass drops, dark techno, expressive guitar solo, cello solo, Rostropovich, heavy metal, grand piano, reverb, cathedral, tapping, choir
+
+--Dreamlike positiv rock
+dreamlike female vocal, atmospheric new wave and cold wave rock, soft bright chiming delay guitars in a wide arena soundscape, sparkling synth layers and airy pads, nostalgic yet joyful springtime mood, breathy fragile tone with slightly raspy seductive edge, half spoken and whispered phrases with layered intimate harmonies, warm luminous textures, melodic bass with subtle grit, flowing mid tempo four on the floor groove, spacious drums with steady kick, snare backbeat, shimmering cymbals and soft shakers, light orchestral strings and flute colors, cinematic film ballad undertone, lush arpeggiated synths with tape style saturation, dark cinematic electro rock and nu disco synthwave crossover, deep house and electro funk pulse, pulsating analog synth basslines with bass scratches, crisp hi hats, layered claps, reverb heavy snares, deep sub driven kicks, distorted electronic guitar riffs with bluesy slides, eerie ambient pads and dynamic sfx risers, vocoder textures, neon nocturnal
+
+spy-film torch-pop x 90s harmony R&B x nocturnal whisper-dream-pop x pagan British folk-rock, tempo morph, vocals: one powerhouse female lead (smoky low register, whisper-to-belt, dramatic vibrato) plus silky stacked harmonies, call-and-response, occasional noir spoken adlibs, instrumentation: fingerpicked acoustic + 12-string shimmer, bouzouki/mandolin, dulcimer, modal Dorian/Aeolian melodies with sustained ritual drones, handpan feature (clean resonant room bloom), chant festival refrains, cabaret-chamber flash: accordion, clarinet, bowed bass, waltz hint, dreamy layers, trip-hop microbeats (subby kick, rim-click snare, brushed hats), soul-funk spy colors: Rhodes+piano, vibraphone, dark organ, brass stabs + lush strings + timpani swells, neon sophisti-pop flip: gated kick/snare, crisp hats, deep dubby bass with octave pops, analog synth arps, FM bell plucks, noir jazz chords 9ths/11ths/13ths, wide stereo, tight low end, loud but dynamic master
+
+cinematic 70s soul-funk symphonic fusion, deep baritone vocals with smooth spoken-word storytelling, groove-driven four-on-the-floor disco-funk pulse interwoven with syncopated 7/8 and 5/4 polyrhythms, virtuosic slap and fingerstyle basslines with warm overdrive tone, articulate attack and midrange growl, tight live drums with crisp snares, thunderous kicks, shimmering hi-hats, and rolling toms, rhythmic wah-wah guitars, bright clavinet stabs, lush Rhodes chords, and moog bass swells creating harmonic depth, orchestral strings, brass fanfares, vibraphone sparkle, and mariachi trumpet adding cinematic richness, soulful female harmonies and gospel call-and-response choirs, analog synth pads, 303 acid pulses, and baroque harpsichord flourishes, grand piano interludes bridging funk and gothic symphonic rock, dynamic cinematic modulations and orchestral builds, glossy hi-fi mix with analog warmth, soulful, glamorous, mysterious, dramatic, and irresistibly funky atmosphere
+
+Dramatic, overly serious delivery
+
 #dance
+
+Upbeat dance edm
+
 
 Nostalgic tech-house with airy, spacey pads and granular glitch textures;  mesmerizing vocals 
 tight 4-on-the-floor kick under shuffling hats, sidechained synth swells, and a rubbery bass groove, Vocals sit slightly filtered and distant, like a broadcast from the past, with stuttered chops echoing key words in the hook, Builds from a minimal, hazy verse into a big, euphoric chorus wash, then strips back for a late dreamy break before the final lift, glitch, nostalgic
@@ -29,6 +111,10 @@ Russian pop-rock with a strong reggae influence and ska-punk elements, The track
 
 Explosive gothic metal track launches with an aggressive, syncopated djent riff layered over darkwave electronic grooves, Industrial percussion and eastern-influenced scales shape verse atmospheres, while operatic female contralto soars above dense, ultramodern textures, Every element is crisply defined: perfect EQ, flawless vocal/instrument separation, and a clean, immersive mix that shifts dynamically through heavy breakdowns and melodic bridges
 
+Emo, rock, m83, trippy
+
+--relax mid term
+A mid-tempo indie rock track with a melancholic yet driving atmosphere, set at 110 BPM in the key of G minor, The arrangement features a prominent, clean electric guitar playing a rhythmic arpeggiated pattern with light chorus and delay, A warm, melodic bassline - close to the original - provides a solid foundation, while the drums consist of a steady, punchy kick and snare with crisp hi-hats, The male vocals are expressive, warm and somewhat raspy, utilizing a moderate amount of reverb to create a sense of space, The song structure follows a standard verse-chorus-verse-chorus-bridge-chorus format, with the bridge introducing a more intense instrumental layer including distorted guitar textures, The overall mix is balanced, emphasizing the interplay between the vocal melody and the shimmering guitar work
 
 hard rock, arena rock, melodic rock <-
 
@@ -47,6 +133,8 @@ HPF studio quality EQ  pop/rock, post hardcore layered textured female vocals, g
 HPF studio quality EQ  pop/punk, post hardcore layered textured female vocals, garage band, heavy beat, aggressive delivery in a minor key, ‑synth, ‑synth drum pads, ‑chiptune
 
 ## R&B
+
+Soft pop R&B with a minimalist, late-night bedroom feel, Warm finger-picked acoustic guitar layered with subtle lo-fi textures, muted keys, and airy pads
 
 Contemporary R&B, New Jack Swing
 
