@@ -1,0 +1,54 @@
+[Intro]
+[Build-up]
+[Main Atmosphere]
+[Deep Relaxation]
+[Climax]
+[Extended Outro]
+[End]
+
+4 minutes long, long form instrumental, extended ambient, 4 minute seamless meditation, progressive long-form, continuous evolving soundscape,
+
+
+
+...
+
+1. Latvian Pirts
+Prompt:
+"Latvian Pirts sauna instrumental, traditional Baltic wooden bathhouse, herbal steam and intense heat atmosphere, deep folk roots, soft kokle zither, low bagpipe-like drones, gentle wooden percussion, earthy and grounding, ancient Latvian forest spirit, very relaxing yet powerful traditional ambient, seamless long-form instrumental"
+Negative Prompt:
+"vocals, lyrics, modern beats, cheerful, water splashing dominant, synth pop, too bright"
+2. Lithuanian Herbal Sauna (Žolynų Pirtis)
+Prompt:
+"Lithuanian herbal sauna instrumental, aromatic herb-filled wooden sauna, healing plant scents and gentle steam, Baltic pagan atmosphere, soft kanklės, pan flute touches, warm ambient pads with herbal rustling elements (musical), mystical and nurturing, deep nature connection, high quality meditative instrumental"
+Negative Prompt:
+"vocals, lyrics, fast rhythms, aggressive percussion, dark ambient, modern electronic"
+3. Roman Thermae / Ancient Roman Bath
+Prompt:
+"Ancient Roman Thermae bathhouse instrumental, luxurious marble halls with underfloor heating, sophisticated Roman spa atmosphere, soft lyre and aulos flute, warm orchestral strings, subtle percussion, elegant and imperial yet deeply relaxing, classical ambient with thermal water warmth (no direct splashing), cinematic historical instrumental"
+Negative Prompt:
+"vocals, choir singing, dramatic opera, water sounds dominant, modern fusion, tense music"
+4. Icelandic Geothermal Sauna
+Prompt:
+"Icelandic geothermal sauna instrumental, hot natural spring energy in volcanic landscape, clean mineral heat atmosphere, ethereal Nordic ambient, soft acoustic guitar with icy tones, deep sub bass drones like earth rumble, subtle wind and steam musical elements, powerful yet calming, raw Icelandic nature soundscape instrumental"
+Negative Prompt:
+"vocals, lyrics, upbeat folk, heavy percussion, crowded, synthetic pop"
+5. Jewish Shvitz (Traditional Steam Bath)
+Prompt:
+"Traditional Jewish Shvitz instrumental, old-school steam bath atmosphere, warm communal wooden rooms, klezmer-inspired gentle clarinet and violin, soft accordion touches, warm pads, nostalgic and comforting Eastern European Jewish spa feel, healing and reflective, high quality ambient instrumental"
+Negative Prompt:
+"vocals, lyrics, fast klezmer dance, party music, water sounds, dark tense"
+6. Indonesian Oukup (Karo Batak)
+Prompt:
+"Indonesian Oukup traditional sauna instrumental, Karo Batak herbal steam bath in Sumatra, aromatic herbs and communal ritual atmosphere, gentle gamelan elements, bamboo flute, soft percussion, warm tropical ambient pads, spiritual and earthy, Southeast Asian healing ritual sound, meditative instrumental"
+Negative Prompt:
+"vocals, lyrics, energetic gamelan, modern beats, rain forest sounds dominant, too upbeat"
+7. Bio-Sauna / Kräutersauna (milde Kräuter-Sauna, vor allem DE/AT)
+Prompt:
+"German Bio-Sauna or Kräutersauna instrumental, mild temperature herbal sauna, aromatic essential oils and gentle heat, soft zither or acoustic guitar, warm ambient pads, subtle chimes and nature sounds (musical), very soothing and therapeutic, wellness spa atmosphere, smooth relaxing long-form instrumental"
+Negative Prompt:
+"vocals, lyrics, strong percussion, high heat intense music, water splashing, dark ambient"
+8. African Sifutu (West African traditional sweat bath)
+Prompt:
+"West African Sifutu sauna instrumental, traditional earthen hut sweat bath, hot stone and herbal ritual atmosphere, soft African drums (gentle), kalimba, wooden flutes, earthy drones, ancestral and grounding energy, warm tribal ambient, spiritual healing soundscape instrumental"
+Negative Prompt:
+"vocals, lyrics, energetic dance rhythms, loud percussion, modern Afrobeat, too cheerful"

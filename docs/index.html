@@ -79,7 +79,7 @@
                     class="w-10 h-10 bg-gradient-to-br to-purple-700 rounded-2xl flex items-center justify-center text-3xl shadow-pink-500/50">
                     &#x264C;
                 </div>-->
-                <img class="object-contain md:object-cover" src="img/favicon/favicon-32x32.png"/>
+                <img class="object-contain md:object-cover" src="img/favicon/favicon-32x32.png" />
                 <h1
                     class="logo-font text-4xl tracking-tighter font-bold logo-font tracking-tighter leading-none neon-text">
                     DARK<span class="text-pink-500">LEO</span></h1>
@@ -94,8 +94,10 @@
 
             <div class="flex items-center gap-5">
                 <!--<a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>-->
-                <a href="https://www.tiktok.com/@darkleo.official" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.tiktok.com/@darkleo.official" class="text-2xl hover:text-pink-400"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY"
+                    class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
 
                 <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
                     <i id="hamburger" class="fa-solid fa-bars"></i>
@@ -149,7 +151,7 @@
                     class="absolute w-96 h-96 bg-gradient-to-br from-pink-600/30 to-purple-700/30 rounded-[4rem] -rotate-12 blur-3xl">
                 </div>
                 <div class="relative bg-zinc-900/80 backdrop-blur-3xl border border-pink-500/20 rounded-3xl p-8">
-                    
+
                     <img class="object-contain md:object-cover" src="img/album_600x600.jpg" />
                     <!--<div
                         class="w-80 h-80 bg-gradient-to-br from-pink-600 to-purple-700 rounded-2xl flex items-center justify-center text-[160px] shadow-2xl">
@@ -174,18 +176,53 @@
                 <span class="text-pink-400 uppercase tracking-[3px] text-sm">Deutschland • 2026</span>
                 <h2 class="text-6xl font-bold logo-font tracking-tighter mt-4">DARK<span
                         class="text-pink-500">LEO</span></h2>
-                <p class="mt-8 text-2xl text-white/80">Dunkle Synth-Elektro mit tiefer Emotionalität.</p>
+                <p class="mt-8 text-2xl text-white/80">Musik mit tiefer Emotionalität.</p>
             </div>
             <div class="md:col-span-7 text-lg text-white/70 leading-relaxed">
                 <p>
-                    DARKLEO ist eine Band, die tiefe, atmosphärische Elektronik mit rockigen Elementen und intensiven
+                    DARKLEO ist eine Band, die tiefe, atmosphärische Elektronik, EDM, Rap mit rockigen Elementen und
+                    intensiven
                     Vocals verbindet.
                     Unsere Musik ist wie ein nächtlicher Spaziergang durch verlassene Straßen – melancholisch, kraftvoll
-                    und hypnotisch.
+                    und hypnotisch, wir verbinden die Sprachen.
                 </p>
             </div>
         </div>
     </section>
+
+    <!-- LIVE -->
+    <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24">
+        <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Albums</h2>
+        <div class="space-y-6">
+            <div
+                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <div class="text-3xl font-semibold">Darkleo - Lemon(RU)</div>
+                    <div class="">
+                        <img class="object-contain md:object-cover" src="img/lemon-cover512x512.jpg" />
+                    </div>
+                </div>
+                <a href="https://open.spotify.com/intl-de/album/23oQ5PQ8jA7DnQe9HIOhys?si=Lz3wSryDQkOa71ruVuWeTQ"
+                    target="_blank">
+                    <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Spotify</span>
+                </a>
+            </div>
+            <div
+                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <div class="text-3xl font-semibold">Darkleo - Dunkelheit(DE)</div>
+                    <div class="">
+                        <img class="object-contain md:object-cover" src="img/dunkelheit-cover512x512.jpg" />
+                    </div>
+                </div>
+                <a href="https://open.spotify.com/intl-de/album/23oQ5PQ8jA7DnQe9HIOhys?si=Lz3wSryDQkOa71ruVuWeTQ"
+                    target="_blank">
+                    <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Spotify</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- MUSIK SECTION -->
     <section id="musik" class="bg-black py-24 border-t border-b border-white/10">
@@ -256,28 +293,7 @@
         <audio id="audioElement" preload="metadata"></audio>
     </div>
 
-    <!-- LIVE -->
-    <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24 hidden">
-        <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Tour 2026</h2>
-        <div class="space-y-6">
-            <div
-                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div>
-                    <div class="text-pink-400 font-mono">05. JUNI 2026 • BERLIN</div>
-                    <div class="text-3xl font-semibold">Hole 44</div>
-                </div>
-                <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Tickets</span>
-            </div>
-            <div
-                class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
-                <div>
-                    <div class="text-pink-400 font-mono">18. JULI 2026 • HAMBURG</div>
-                    <div class="text-3xl font-semibold">Uebel & Gefährlich</div>
-                </div>
-                <span class="mt-4 md:mt-0 px-8 py-3 bg-pink-600 text-black rounded-3xl font-medium">Tickets</span>
-            </div>
-        </div>
-    </section>
+
 
     <!-- KONTAKT -->
     <section id="kontakt" class="bg-black py-24 border-t border-white/10 hidden">

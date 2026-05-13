@@ -1,0 +1,6 @@
+Infrared  Moderne Wellness-Sauna
+
+Prompt:
+"Modern infrared sauna instrumental, clean high-end wellness spa, gentle infrared heat, deep cellular relaxation, soft ambient electronic pads, crystal bowls, handpan, warm subtle bass, minimalist and therapeutic, premium spa music, healing frequencies, very smooth and futuristic relaxation instrumental"
+Negative Prompt:
+"vocals, lyrics, beats, percussion heavy, water sounds, dark ambient, busy arrangement, cheap sounds"

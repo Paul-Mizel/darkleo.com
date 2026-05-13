@@ -1,0 +1,6 @@
+
+
+Prompt:
+"Moroccan Hammam instrumental, traditional North African steam bath, ornate tiled bathhouse, warm and luxurious atmosphere, oud, ney flute, Moroccan bendir drum (soft), qanun, rich ambient strings, sensual and mystical oriental spa, healing and exotic, high quality cinematic instrumental"
+Negative Prompt:
+"vocals, lyrics, fast belly dance rhythms, aggressive percussion, water sounds, Western fusion, dark tense music"
