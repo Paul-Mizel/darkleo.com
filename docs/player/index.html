@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkleo • Music Player</title>
+    <meta name="description"
+        content="DARKLEO – Offizielle Website des Kreativprojektes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+        :root {
+            --primary: 234 179 8;
+        }
+
+        .tail-container {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .album-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .album-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .track-item {
+            transition: all 0.2s ease;
+        }
+
+        .track-item:hover {
+            background-color: #1f2937;
+        }
+
+        .playing {
+            background-color: #1f2937;
+            border-left: 4px solid rgb(190 24 93);
+        }
+
+        .progress-bar {
+            height: 4px;
+            background: linear-gradient(to right, rgb(190 24 93) var(--progress), #4b5563 var(--progress));
+        }
+
+        audio {
+            display: none;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a001f 100%);
+        }
+    </style>
+</head>
+
+<body class="gradient-bg bg-zinc-950 tail-container text-zinc-100 min-h-screen pb-24">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+            <div class="px-4 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-x-3">
+                       
+                    <div>
+                        <span class="text-3xl font-semibold tracking-tighter logo-font">
+                            <i class="fa-solid fa-circle-play text-3xl text-pink-700"></i>
+                            Darkleo Player</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-x-8 text-sm">
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium">
+                        <a href="https://darkleo.com" target="_self"><i class="fa-solid fa-close text-3xl text-pink-700"></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex">
+            <!-- Sidebar (Desktop) -->
+            <div class="hidden lg:flex w-72 border-zinc-800 min-h-[calc(100vh-73px)] flex-col p-6">
+                <div class="mb-8">
+                    <h3 class="text-xs uppercase tracking-widest text-zinc-500 font-medium mb-4">Alben</h3>
+                    <div id="sidebar-albums" class="space-y-2 text-sm"></div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <main class="flex-1 p-4 lg:p-8">
+                <!-- Albums View -->
+                <div id="albums-view">
+                    <h1 class="text-4xl font-semibold mb-8 tracking-tight">Übersicht</h1>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6" id="album-grid">
+                        <!-- Wird per JS gefüllt -->
+                    </div>
+                </div>
+
+                <!-- Album Detail View -->
+                <div id="album-detail" class="hidden">
+                    <button onclick="showAlbums()"
+                        class="flex items-center gap-x-2 text-zinc-400 hover:text-white mb-6">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Zurück zur Übersicht</span>
+                    </button>
+
+                    <div class="flex flex-col md:flex-row gap-8" id="album-header">
+                        <!-- Wird per JS gefüllt -->
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-lg font-medium mb-4 flex items-center gap-x-2">
+                            <i class="fa-solid fa-list"></i>
+                            Titelliste
+                        </h3>
+                        <div class="space-y-1" id="track-list">
+                            <!-- Wird per JS gefüllt -->
+                        </div>
+                    </div>
+
+                            <!-- Footer -->
+                    <div class="text-center text-zinc-500 text-xs mt-16">
+                        © 2026 DARKLEO • Made with ❤️ for the fans
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bottom Player -->
+    <div class="fixed bottom-0 left-0 right-0 bg-zinc-900 border-t border-zinc-700 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex items-center justify-between gap-4">
+                <!-- Song Info -->
+                <div class="flex items-center gap-x-4 w-80">
+                    <div id="player-cover"
+                        class="w-14 h-14 bg-zinc-700 rounded-xl flex-shrink-0 shadow-inner overflow-hidden">
+                        <img src="https://picsum.photos/id/1015/300/300" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <div class="min-w-0">
+                        <p id="player-title" class="font-medium text-sm truncate">Kein Titel ausgewählt</p>
+                        <p id="player-artist" class="text-zinc-400 text-xs truncate">Wähle ein Album</p>
+                    </div>
+                    <button id="like-btn" class="text-zinc-400 hover:text-white ml-2">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Controls -->
+                <div class="flex-1 max-w-md">
+                    <div class="flex items-center justify-center gap-x-6">
+                        <button onclick="prevTrack()" class="text-zinc-400 hover:text-white transition-colors">
+                            <i class="fa-solid fa-backward-step text-xl"></i>
+                        </button>
+
+                        <button onclick="togglePlay()" id="play-btn"
+                            class="w-10 h-10 bg-white hover:bg-pink-700 text-zinc-950 rounded-full flex items-center justify-center transition-all active:scale-95">
+                            <i id="play-icon" class="fa-solid fa-play text-lg ml-0.5"></i>
+                        </button>
+
+                        <button onclick="nextTrack()" class="text-zinc-400 hover:text-white transition-colors">
+                            <i class="fa-solid fa-forward-step text-xl"></i>
+                        </button>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="mt-3 flex items-center gap-x-3 text-xs text-zinc-400">
+                        <span id="current-time">0:00</span>
+
+                        <div id="progress-container"
+                            class="flex-1 h-1.5 bg-zinc-700 rounded-full relative cursor-pointer overflow-hidden">
+                            <div id="progress-bar"
+                                class="absolute top-0 left-0 h-full bg-pink-700 transition-all duration-100 rounded-full"
+                                style="width: 0%"></div>
+                        </div>
+
+                        <span id="duration">0:00</span>
+                    </div>
+                </div>
+
+                <!-- Right side -->
+                <div class="flex items-center gap-x-4 w-80 justify-end">
+                    <button onclick="toggleShuffle()" class="text-zinc-400 hover:text-white">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+                    <button onclick="toggleRepeat()" class="text-zinc-400 hover:text-white">
+                        <i id="repeat-icon" class="fa-solid fa-repeat"></i>
+                    </button>
+
+                    <div class="flex items-center gap-x-2">
+                        <i class="fa-solid fa-volume-high text-zinc-400"></i>
+                        <input type="range" id="volume-slider" class="w-24 accent-pink-700" min="0" max="1"
+                            step="0.01" value="0.8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script>
+        // Tailwind Script
+        function initTailwind() {
+            // Already included via CDN
+        }
+
+        // Daten
+        const albums = [
+            {
+                id: 1,
+                title: "Dunkelheit",
+                artist: "Darkleo",
+                cover: "../img/cover/dunkelheit_512.jpg",
+                tracks: [
+                    { id: 1, title: "Starry Night", duration: "3:42", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+                    { id: 2, title: "Neon Rain", duration: "4:15", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+                    { id: 3, title: "Floating", duration: "3:28", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+                    { id: 4, title: "City Lights", duration: "4:05", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+                    { id: 5, title: "Last Call", duration: "3:51", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" }
+                ]
+            },
+            {
+                id: 2,
+                title: "Helligkeit",
+                artist: "Darkleo",
+                cover: "../img/cover/helligkeit_512.jpg",
+                tracks: [
+                    { id: 1, title: "Heatwave", duration: "3:12", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
+                    { id: 2, title: "Golden Hour", duration: "4:33", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" },
+                    { id: 3, title: "Horizon", duration: "3:58", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" },
+                    { id: 4, title: "Sunburst", duration: "4:20", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" },
+                    { id: 5, title: "Eclipse", duration: "3:40", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" }
+                ]
+            },
+            {
+                id: 3,
+                title: "Lemon",
+                artist: "Dakleo",
+                cover: "../img/cover/lemon_512.jpg",
+                tracks: [
+                    { id: 1, title: "Silk Road", duration: "4:10", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+                    { id: 2, title: "Midnight Oil", duration: "3:55", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+                    { id: 3, title: "Whispers", duration: "4:45", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+                    { id: 4, title: "Crimson", duration: "3:30", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+                    { id: 5, title: "Echo Chamber", duration: "5:12", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" }
+                ]
+            },
+            {
+                id: 4,
+                title: "Melancholia",
+                artist: "Darkleo",
+                cover: "../img/cover/melancholia_512.jpg",
+                tracks: [
+                    { id: 1, title: "Voltage", duration: "3:25", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" },
+                    { id: 2, title: "Afterglow", duration: "4:08", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3" },
+                    { id: 3, title: "Circuit Break", duration: "3:50", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" },
+                    { id: 4, title: "Pulse", duration: "4:22", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3" },
+                    { id: 5, title: "Recharge", duration: "3:15", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3" }
+                ]
+            },
+            {
+                id: 5,
+                title: "Berlin",
+                artist: "Darkleo",
+                cover: "../img/cover/berlin_512.jpg",
+                tracks: [
+                    { id: 1, title: "Tide", duration: "4:40", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+                    { id: 2, title: "Distant Shores", duration: "3:58", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+                    { id: 3, title: "Waves", duration: "5:05", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+                    { id: 4, title: "Current", duration: "3:35", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+                    { id: 5, title: "Horizon Blue", duration: "4:12", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" }
+                ]
+            },
+            {
+                id: 6,
+                title: "Chill & Spa",
+                artist: "Darkleo",
+                cover: "https://picsum.photos/id/1016/600/600",
+                tracks: [
+                    { id: 1, title: "Tide", duration: "4:40", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
+                    { id: 2, title: "Distant Shores", duration: "3:58", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
+                    { id: 3, title: "Waves", duration: "5:05", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" },
+                    { id: 4, title: "Current", duration: "3:35", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" },
+                    { id: 5, title: "Horizon Blue", duration: "4:12", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3" }
+                ]
+            }
+        ]
+
+        let currentAlbum = null
+        let currentTrackIndex = -1
+        let isPlaying = false
+        let shuffle = false
+        let repeat = false
+
+        const audio = document.getElementById('audio-player')
+        let progressInterval = null
+
+        // Render Album Grid
+        function renderAlbums() {
+            const grid = document.getElementById('album-grid')
+            grid.innerHTML = ''
+
+            albums.forEach(album => {
+                const card = document.createElement('div')
+                card.className = `album-card bg-zinc-900 rounded-3xl overflow-hidden cursor-pointer`
+                card.innerHTML = `
+                    <div class="relative">
+                        <img src="${album.cover}" alt="${album.title}" 
+                             class="w-full aspect-square object-cover">
+                        <div class="absolute bottom-4 right-4 w-10 h-10 bg-pink-700 rounded-2xl flex items-center justify-center shadow-xl opacity-0 hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                            <i class="fa-solid fa-play text-zinc-950 ml-0.5"></i>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-semibold">${album.title}</h3>
+                        <p class="text-zinc-400 text-sm">${album.artist}</p>
+                    </div>
+                `
+                card.onclick = () => showAlbumDetail(album)
+                grid.appendChild(card)
+            })
+        }
+
+        // Render Sidebar Albums
+        function renderSidebarAlbums() {
+            const container = document.getElementById('sidebar-albums')
+            container.innerHTML = ''
+
+            albums.forEach(album => {
+                const div = document.createElement('div')
+                div.className = `flex items-center gap-x-3 px-3 py-2.5 rounded-2xl hover:bg-zinc-800 cursor-pointer text-sm`
+                div.innerHTML = `
+                    <img src="${album.cover}" class="w-10 h-10 rounded-xl object-cover">
+                    <div>
+                        <div class="font-medium leading-tight">${album.title}</div>
+                        <div class="text-xs text-zinc-500">${album.artist}</div>
+                    </div>
+                `
+                div.onclick = () => showAlbumDetail(album)
+                container.appendChild(div)
+            })
+        }
+
+        function showAlbumDetail(album) {
+            currentAlbum = album
+            currentTrackIndex = -1
+
+            document.getElementById('albums-view').classList.add('hidden')
+            const detail = document.getElementById('album-detail')
+            detail.classList.remove('hidden')
+
+            // Header
+            const headerHTML = `
+                <div class="md:w-80">
+                    <img src="${album.cover}" alt="${album.title}" 
+                         class="w-full aspect-square rounded-3xl shadow-2xl">
+                </div>
+                <div class="flex-1">
+                    <div class="flex items-center gap-x-3 text-pink-700 text-sm font-medium mb-2">
+                        <i class="fa-solid fa-album"></i>
+                        <span>ALBUM</span>
+                    </div>
+                    <h2 class="text-5xl font-bold tracking-tighter leading-none mb-3">${album.title}</h2>
+                    <p class="text-xl text-zinc-400">${album.artist}</p>
+                    <div class="mt-8 flex items-center gap-x-4">
+                        <button onclick="playAlbum(0)" 
+                                class="px-8 py-4 bg-pink-700 hover:bg-pink-600 transition-colors text-zinc-950 font-semibold rounded-2xl flex items-center gap-x-3 text-lg">
+                            <i class="fa-solid fa-play"></i>
+                            <span>Abspielen</span>
+                        </button>
+                        <!--<button class="w-14 h-14 border border-zinc-600 hover:border-zinc-400 rounded-2xl flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-plus text-xl"></i>
+                        </button>-->
+                    </div>
+                </div>
+            `
+            document.getElementById('album-header').innerHTML = headerHTML
+
+            // Tracks
+            const trackList = document.getElementById('track-list')
+            trackList.innerHTML = ''
+
+            album.tracks.forEach((track, index) => {
+                const trackEl = document.createElement('div')
+                trackEl.className = `track-item flex items-center justify-between px-6 py-4 rounded-2xl group`
+                trackEl.innerHTML = `
+                    <div class="flex items-center gap-x-6">
+                        <span class="w-6 text-right text-zinc-400 group-hover:hidden">${index + 1}</span>
+                        <button onclick="playTrack(${index}); event.stopImmediatePropagation()" 
+                                class="w-6 hidden group-hover:flex items-center justify-center text-pink-700">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+                        <div>
+                            <p class="font-medium">${track.title}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-8">
+                        <span class="text-zinc-400 text-sm">${track.duration}</span>
+                    </div>
+                `
+                trackEl.onclick = () => playTrack(index)
+                trackList.appendChild(trackEl)
+            })
+        }
+
+        function showAlbums() {
+            document.getElementById('album-detail').classList.add('hidden')
+            document.getElementById('albums-view').classList.remove('hidden')
+        }
+
+        function playTrack(index) {
+            if (!currentAlbum) return
+            currentTrackIndex = index
+            const track = currentAlbum.tracks[index]
+
+            audio.src = track.url
+            audio.play().then(() => {
+                isPlaying = true
+                updatePlayerUI()
+                updatePlayButton()
+            }).catch(err => console.log(err))
+
+            // Highlight active track
+            highlightActiveTrack()
+        }
+
+        function playAlbum(startIndex = 0) {
+            if (!currentAlbum) return
+            playTrack(startIndex)
+        }
+
+        function updatePlayerUI() {
+            if (!currentAlbum || currentTrackIndex < 0) return
+
+            const track = currentAlbum.tracks[currentTrackIndex]
+
+            document.getElementById('player-title').textContent = track.title
+            document.getElementById('player-artist').textContent = currentAlbum.artist
+            document.getElementById('player-cover').innerHTML = `
+                <img src="${currentAlbum.cover}" alt="" class="w-full h-full object-cover">
+            `
+
+            // Duration
+            audio.onloadedmetadata = () => {
+                document.getElementById('duration').textContent = formatTime(audio.duration)
+            }
+        }
+
+        function updatePlayButton() {
+            const icon = document.getElementById('play-icon')
+            if (isPlaying) {
+                icon.classList.remove('fa-play')
+                icon.classList.add('fa-pause')
+            } else {
+                icon.classList.remove('fa-pause')
+                icon.classList.add('fa-play')
+            }
+        }
+
+        function togglePlay() {
+            if (!audio.src) {
+                if (currentAlbum) playTrack(0)
+                return
+            }
+
+            if (isPlaying) {
+                audio.pause()
+            } else {
+                audio.play()
+            }
+            isPlaying = !isPlaying
+            updatePlayButton()
+        }
+
+        function nextTrack() {
+            if (!currentAlbum) return
+            let next = currentTrackIndex + 1
+            if (next >= currentAlbum.tracks.length) {
+                next = repeat ? 0 : 0 // loop album
+            }
+            playTrack(next)
+        }
+
+        function prevTrack() {
+            if (!currentAlbum) return
+            let prev = currentTrackIndex - 1
+            if (prev < 0) prev = currentAlbum.tracks.length - 1
+            playTrack(prev)
+        }
+
+        function formatTime(seconds) {
+            if (!seconds || isNaN(seconds)) return "0:00"
+            const min = Math.floor(seconds / 60)
+            const sec = Math.floor(seconds % 60)
+            return `${min}:${sec < 10 ? '0' : ''}${sec}`
+        }
+
+        // Progress Bar
+        function setupProgress() {
+            const progressContainer = document.getElementById('progress-container');
+            const progressBar = document.getElementById('progress-bar');
+
+            audio.ontimeupdate = () => {
+                if (!audio.duration || isNaN(audio.duration)) return;
+
+                const progress = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = `${progress}%`;
+
+                document.getElementById('current-time').textContent = formatTime(audio.currentTime);
+            };
+
+            // Klick auf Progressbar
+            progressContainer.addEventListener('click', (e) => {
+                const rect = progressContainer.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const percentage = clickX / rect.width;
+
+                if (audio.duration) {
+                    audio.currentTime = percentage * audio.duration;
+                }
+            });
+        }
+
+        function highlightActiveTrack() {
+            const tracks = document.querySelectorAll('.track-item')
+            tracks.forEach((track, i) => {
+                if (i === currentTrackIndex) {
+                    track.classList.add('playing')
+                } else {
+                    track.classList.remove('playing')
+                }
+            })
+        }
+
+        function toggleShuffle() {
+            shuffle = !shuffle
+            // Einfache visuelle Rückmeldung
+            alert("Shuffle: " + (shuffle ? "Aktiviert" : "Deaktiviert"))
+        }
+
+        function toggleRepeat() {
+            repeat = !repeat
+            const icon = document.getElementById('repeat-icon')
+            if (repeat) {
+                icon.classList.add('text-pink-700')
+            } else {
+                icon.classList.remove('text-pink-700')
+            }
+        }
+
+        // Audio Events
+        function setupAudioEvents() {
+            audio.onended = () => {
+                isPlaying = false
+                updatePlayButton()
+                nextTrack()
+            }
+
+            audio.onplay = () => {
+                isPlaying = true
+                updatePlayButton()
+            }
+
+            audio.onpause = () => {
+                isPlaying = false
+                updatePlayButton()
+            }
+        }
+
+        // Keyboard Support
+        function setupKeyboard() {
+            document.addEventListener('keydown', (e) => {
+                if (e.code === 'Space') {
+                    e.preventDefault()
+                    togglePlay()
+                }
+                if (e.code === 'ArrowRight') {
+                    nextTrack()
+                }
+                if (e.code === 'ArrowLeft') {
+                    prevTrack()
+                }
+            })
+        }
+
+        // Volume
+        function setupVolume() {
+            const volumeSlider = document.getElementById('volume-slider')
+            volumeSlider.addEventListener('input', () => {
+                audio.volume = parseFloat(volumeSlider.value)
+            })
+        }
+
+        // Initialize everything
+        function initializeApp() {
+            renderAlbums()
+            renderSidebarAlbums()
+            setupProgress()
+            setupAudioEvents()
+            setupKeyboard()
+            setupVolume()
+
+            // Demo: Erstes Album vorauswählen
+            setTimeout(() => {
+                showAlbumDetail(albums[0])
+            }, 800)
+        }
+
+        // Start
+        window.onload = initializeApp
+    </script>
+</body>
+
+</html>

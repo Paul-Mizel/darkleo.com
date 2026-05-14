@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkleo • Linkttree</title>
+    <meta name="description"
+        content="DARKLEO – Offizielle Website des Kreativprojektes.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a001f 100%);
+        }
+
+    </style>
+</head>
+
+<body class="gradient-bg bg-zinc-950 min-h-screen text-white pb-12">
+
+    <div class="max-w-md mx-auto px-4 pt-10">
+
+        <!-- Profil -->
+        <div class="flex flex-col items-center text-center mb-10">
+            <div class="w-64 h-64 rounded-3xl overflow-hidden border-4 border-current shadow-2xl mb-6">
+                <img src="../img/dunkelheit-cover512x512.jpg" alt="Darkleo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-bold logo-font tracking-tighter">Darkleo</h1>
+            <p class="text-pink-600 mt-1 text-lg">Dunkelheit • Out Now</p>
+            <p class="text-zinc-400 mt-4 max-w-xs">
+                Neue Single "Dunkelheit" ist überall verfügbar ✨
+            </p>
+        </div>
+
+        <!-- Streaming Buttons -->
+        <div class="space-y-4">
+            <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-brands fa-spotify text-3xl text-[#1DB954]"></i>
+                <span class="flex-1">Auf Spotify hören</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://music.apple.com/de/artist/darkleo/1895909995" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-brands fa-apple text-3xl"></i>
+                <span class="flex-1">Auf Apple Music</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://music.youtube.com/DARKLEO" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-brands fa-youtube text-3xl text-red-500"></i>
+                <span class="flex-1">Auf YouTube Music</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://amazon.com/music/player/artists/B0GXQQQQJS/darkleo" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-brands fa-amazon text-3xl text-yellow-500"></i>
+                <span class="flex-1">Auf Amazon Music</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://tidal.com/artist/78187733" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <span class="text-3xl font-bold text-cyan-400">TIDAL</span>
+                <span class="flex-1">Auf Tidal</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://www.deezer.com/us/artist/386159791" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <span class="text-3xl font-bold text-purple-500">DEEZER</span>
+                <span class="flex-1">Auf Deezer</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://soundcloud.com/darkleo_official" target="_blank"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-brands fa-soundcloud text-3xl text-orange-500"></i>
+                <span class="flex-1">Auf SoundCloud</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+
+            <a href="https://darkleo.com/player" target="_self"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-solid fa-circle-play text-3xl text-pink-700"></i>
+                <span class="flex-1">Auf Darkleo Player</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+            <a href="https://darkleo.com" target="_self"
+                class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                <i class="fa-solid fa-house text-3xl text-pink-700"></i>
+                <span class="flex-1">Zur Website</span>
+                <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+            </a>
+        </div>
+
+        <!-- Extra Links -->
+        <div class="mt-12 text-center">
+            <h3 class="text-zinc-400 text-sm uppercase tracking-widest mb-4">Mehr von mir</h3>
+            <div class="flex justify-center gap-6 text-3xl">
+                <a href="#" class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-zinc-500 text-xs mt-16">
+            © 2026 DARKLEO • Made with ❤️ for the fans
+        </div>
+    </div>
+
+    <script>
+        // Tailwind Script (falls nötig zusätzliche Config)
+        tailwind.config = {
+            content: [],
+            darkMode: 'class',        // oder 'media'
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#eab308',     // Gelb wie in deinen Projekten
+                        'neon': '#22d3ee',
+                    },
+                    fontFamily: {
+                        logo: ['Space Grotesk', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
