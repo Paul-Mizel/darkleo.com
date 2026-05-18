@@ -65,6 +65,31 @@
         .text-6xl {
             font-size: 2.75rem !important;
         }
+
+        .album-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .album-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .cover-container {
+            position: relative;
+        }
+
+        .track-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(0, 0, 0, 0.75);
+            color: white;
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            backdrop-filter: blur(4px);
+        }
     </style>
 </head>
 
@@ -93,11 +118,15 @@
             </div>
 
             <div class="flex items-center gap-5">
-                <!--<a href="#" class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>-->
-                <a href="https://www.tiktok.com/@darkleo.official" class="text-2xl hover:text-pink-400"><i
-                        class="fa-brands fa-tiktok"></i></a>
-                <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY"
+                <a href="https://www.instagram.com/darkleo.official" target="_blank"
+                    class="text-2xl hover:text-pink-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@darkleo.official" target="_blank"
+                    class="text-2xl hover:text-pink-400"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@darkleo.official" target="_blank"
+                    class="text-2xl hover:text-pink-400"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
                     class="text-2xl hover:text-pink-400"><i class="fa-brands fa-spotify"></i></a>
+
 
                 <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
                     <i id="hamburger" class="fa-solid fa-bars"></i>
@@ -129,18 +158,18 @@
                     DARK<span class="text-pink-500">LEO</span>
                 </h1>
                 <p class="text-3xl text-pink-300 font-light">
-                    Dunkle / Helle Rock Musik.<br>
-                    Russischer Rap/Rock Heiter und Melancholisch.<br>
-                    Sprach und Rap/EDM Cossover.<br>
-                    <br>                    
+                    Dunkler & Heller Deutschrock.<br>
+                    Russischer Rap/Rock Heiter bis Melancholisch.<br>
+                    Rap/EDM/Sprach Cossover.<br>
+                    <br>
                 </p>
 
                 <div class="flex flex-wrap gap-4">
-                    <button onclick="playFeatured()"
+                    <a href="https://darkleo.com/player"
                         class="bg-pink-600 hover:bg-pink-500 text-white font-semibold px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
                         <i class="fa-solid fa-play"></i>
                         JETZT ANHÖREN
-                    </button>
+                    </a>
 
                     <a href="#musik"
                         class="border border-white/60 hover:border-pink-400 font-medium px-10 py-5 rounded-3xl text-xl flex items-center gap-3">
@@ -185,11 +214,12 @@
             </div>
             <div class="md:col-span-7 text-lg text-white/70 leading-relaxed">
                 <p>
-                    DARKLEO ist ein Pojekt, Wir machen Musik ohne Grenzen - verschiedene Styles, verschiedene Vibes und
-                    verschiedene Sprachen. Mal emotional, mal hart, mal melancholisch oder voller Energie. Wir
+                    DARKLEO ist ein Projekt, Wir machen Musik ohne Grenzen und kombinieren dabei verschiedene Styles,
+                    Vibes und
+                    Sprachen. Mal emotional, mal hart, mal melancholisch oder voller Energie. Wir
                     erschaffen die Songs, die wir selbst feiern würden, die wir nachts hören, im Auto laufen lassen oder
                     mit Freunden teilen. Dabei ist uns egal, ob Deutsch, Russisch, Englisch oder mix von allem -
-                    wichtig ist nur, dass es sich echt anfühlt. Wenn euch unsere Musik gefällt, ihr dieselben Vibes
+                    wichtig ist nur, dass es was in einem bewegt. Wenn euch unsere Musik gefällt, ihr dieselben Vibes
                     fühlt und Teil dieser Reise sein wollt, dann willkommen in der Community von DAKLEO. 🖤
                 </p>
             </div>
@@ -199,23 +229,462 @@
     <!-- VIDEO -->
     <section id="video" class="max-w-screen-2xl mx-auto px-8 py-24 border-t border-white/10">
         <div class="grid md:grid-cols-12 gap-16">
-            <div class="md:col-span-12">
+            <div class="md:col-span-6">
                 <span class="text-pink-400 uppercase tracking-[3px] text-sm">Neues Musikvideo.</span>
                 <h2 class="text-6xl font-bold logo-font tracking-tighter mt-4">REGEN <span
-                        class="text-pink-500">(2026)</span></h2>                
+                        class="text-pink-500">(2026)</span></h2>
+                <p class="mt-8 text-2xl text-white/80">Viel Spaß...</p>
             </div>
-            <div class="md:col-span-12">
-                <div class="aspect-w-16 aspect-h-9">  
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y4Y5QoWDeQM?si=JsGX1ohvkW7ycK4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>                
+            <div class="md:col-span-6">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe width="100%" height="350px"
+                        src="https://www.youtube.com/embed/Y4Y5QoWDeQM?si=JsGX1ohvkW7ycK4o" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
 
 
+    <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24 border-t border-white/10">
+        <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Unsere Alben</h2>
+
+        <!-- Album Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Album 1 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/dunkelheit_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>20 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Dunkelheit</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+            <!-- Album 2 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/helligkeit_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>14 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Helligkeit</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+            <!-- Album 3 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/lemon_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>14 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Lemon</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo - Russian Rock</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+            <!-- Album 4 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/melancholia_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>11 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Melancholia</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo - Russisch Rock</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+            <!-- Album 5 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/berlin_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>20 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Melancholia</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo - Crossover EDM</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+            <!-- Album 6 -->
+            <div class="album-card bg-zinc-900 rounded-2xl overflow-hidden">
+                <div class="cover-container">
+                    <img src="img/cover/chillandspa_512.jpg" alt="Album Cover"
+                        class="w-full aspect-square object-cover">
+                    <div class="track-badge flex items-center gap-1">
+                        <i class="fa-solid fa-music text-xs"></i>
+                        <span>20 Titel</span>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-semibold text-lg">Chill & SPA</h3>
+                    <p class="text-zinc-400 mb-6">Darkleo - Instrumental</p>
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 transition-colors text-black font-semibold py-3 px-6 rounded-xl">
+                        <i class="fa-brands fa-spotify"></i>
+                        Auf Spotify anhören
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- LIVE -->
+<!--
     <section id="live" class="max-w-screen-2xl mx-auto px-8 py-24">
         <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Albums</h2>
+
+
+        <div id="playlist" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div onclick="playSong(0)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="img/lemon-cover512x512.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">20
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Dunkelheit (Duett)</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(1)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="img/cover/dunkelheit_512.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">20
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Weine nicht</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(2)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/sternenmeer.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:18
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Sternenmeer</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(3)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/regen.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">5:19
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Regen</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(4)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/autarkie-duett.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:07
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Autarkie (Duett)</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(5)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/narben.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:57
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Narben</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(6)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/krieg.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:14
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Krieg</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(7)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/schlaflose-nacht.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:32
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Schlaflose Nacht</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(8)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/digitale-psychose.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:45
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Digitale Psychose</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(9)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/die-letzte-sucht-duett.jpg"
+                        style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:54
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Die letzte Sucht (Duett)</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(10)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/das-eine-jahr.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:39
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Das eine Jahr</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(11)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/februarschnee-duett.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:14
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Februarschnee (Duett)</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(12)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/das-digitale-nichts.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:22
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Das Digitale Nichts</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(13)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/alter-mann.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:14
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Alter Mann</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(14)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/seelenlos-duett.jpg" style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">3:36
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Seelenlos (Duett)</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+            <div onclick="playSong(15)"
+                class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
+                <div
+                    class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
+                    <img src="content/mp3/mongolei-bis-marrakesch.jpg"
+                        style="position: absolute;top: -108px;opacity: 0.5;">
+                    <i class="fa-solid fa-music"></i>
+                    <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">4:03
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="font-semibold text-xl">Mongolei bis Marrakesch</div>
+                    <div class="text-pink-400">DARKLEO</div>
+                    <button
+                        class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
+                        ABSPIELEN
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="space-y-6">
             <div
                 class="bg-white/5 hover:bg-white/10 rounded-3xl p-8 flex flex-col md:flex-row justify-between items-start md:items-center">
@@ -245,22 +714,89 @@
             </div>
         </div>
     </section>
+-->
 
-
-    <!-- MUSIK SECTION -->
+    <!-- LINK SECTION -->
     <section id="musik" class="bg-black py-24 border-t border-b border-white/10">
         <div class="max-w-screen-2xl mx-auto px-8">
-            <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Unsere Tracks</h2>
-            <h3 class="text-4xl font-bold logo-font tracking-tighter mb-12">Album "Die Dunkelheit"</h3>
-            <div id="playlist" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Wird per JavaScript gefüllt -->
+            <h2 class="text-5xl font-bold logo-font tracking-tighter mb-12">Musik hören</h2>
+
+            <div class="max-w-md mx-auto px-4 pt-10">
+                <!-- Streaming Buttons -->
+                <div class="space-y-4">
+                    <a href="https://open.spotify.com/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-brands fa-spotify text-3xl text-[#1DB954]"></i>
+                        <span class="flex-1">Auf Spotify hören</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://music.apple.com/de/artist/darkleo/1895909995" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-brands fa-apple text-3xl"></i>
+                        <span class="flex-1">Auf Apple Music</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://music.youtube.com/DARKLEO" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-brands fa-youtube text-3xl text-red-500"></i>
+                        <span class="flex-1">Auf YouTube Music</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://amazon.com/music/player/artists/B0GXQQQQJS/darkleo" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-brands fa-amazon text-3xl text-yellow-500"></i>
+                        <span class="flex-1">Auf Amazon Music</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://tidal.com/artist/78187733" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <span class="text-3xl font-bold text-cyan-400">TIDAL</span>
+                        <span class="flex-1">Auf Tidal</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://www.deezer.com/us/artist/386159791" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <span class="text-3xl font-bold text-purple-500">DEEZER</span>
+                        <span class="flex-1">Auf Deezer</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://soundcloud.com/darkleo_official" target="_blank"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-brands fa-soundcloud text-3xl text-orange-500"></i>
+                        <span class="flex-1">Auf SoundCloud</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+
+                    <a href="https://darkleo.com/player" target="_self"
+                        class="flex items-center gap-4 bg-zinc-900 hover:bg-zinc-800 card-hover rounded-3xl px-6 py-5 text-lg font-medium">
+                        <i class="fa-solid fa-circle-play text-3xl text-pink-700"></i>
+                        <span class="flex-1">Auf Darkleo Player</span>
+                        <i class="fa-solid fa-arrow-right text-zinc-500"></i>
+                    </a>
+                </div>
+
+                <!-- Extra Links -->
+                <div class="mt-12 text-center">
+                    <h3 class="text-zinc-400 text-sm uppercase tracking-widest mb-4">Mehr von uns</h3>
+                    <div class="flex justify-center gap-6 text-3xl">
+                        <a href="https://www.instagram.com/darkleo.official" target="_blank"
+                            class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@darkleo.official" target="_blank"
+                            class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/@darkleo.official" target="_blank"
+                            class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/intl-de/artist/4mZsF3V570ld5k6EhYUQoY" target="_blank"
+                            class="hover:text-pink-600 transition-colors"><i class="fa-brands fa-spotify"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <h3 class="text-4xl font-bold logo-font tracking-tighter mb-12 mt-12">Album "Die Helligkeit"</h3>
-
-            <div id="playlist_2" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Wird per JavaScript gefüllt -->
-            </div>
         </div>
     </section>
 
@@ -338,7 +874,7 @@
     <!-- FOOTER -->
     <footer class="bg-black py-12 border-t border-white/10">
         <div class="max-w-screen-2xl mx-auto px-8 text-center text-white/40 text-sm">
-            © 2026 DARKLEO • Alle Rechte vorbehalten
+            © 2026 DARKLEO • Made with ❤️ for the fans
         </div>
     </footer>
 
@@ -491,183 +1027,6 @@
             }
         ];
 
-        // Songs (du kannst die URLs später durch deine eigenen MP3-Dateien ersetzen)
-        const songs_2 = [
-
-        ];
-
-
-        let currentSongIndex = 0
-        let audio = null
-        let isPlaying = false
-        let isMuted = false
-
-        function renderPlaylist() {
-            const container = document.getElementById('playlist')
-            container.innerHTML = ''
-
-            songs.forEach((song, index) => {
-
-                if (index > 15) {
-                    return;
-                }
-                const html = `
-                <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
-                    <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
-                        <img src="${song.img}" style="position: absolute;top: -108px;opacity: 0.5;">
-                        <i class="fa-solid fa-music"></i>
-                        <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">${song.duration}</div>
-                    </div>
-                    <div class="p-6">
-                        <div class="font-semibold text-xl">${song.title}</div>
-                        <div class="text-pink-400">${song.artist}</div>
-                        <button class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
-                            ABSPIELEN
-                        </button>
-                    </div>
-                </div>`
-                container.innerHTML += html
-            });
-
-            const container_2 = document.getElementById('playlist_2');
-            container_2.innerHTML = '';
-            songs.forEach((song, index) => {
-                if (index > 15) {
-                    const html2 = `
-                <div onclick="playSong(${index})" class="card-hover bg-zinc-900 border border-white/10 hover:border-pink-500 rounded-3xl overflow-hidden cursor-pointer">
-                    <div class="h-60 bg-gradient-to-br from-pink-600 to-purple-700 flex items-center justify-center text-7xl relative">
-                        <img src="${song.img}" style="position: absolute;top: -108px;opacity: 0.5;">
-                        <i class="fa-solid fa-music"></i>
-                        <div class="absolute bottom-6 right-6 bg-black/70 px-4 py-1 rounded-2xl text-sm font-mono">${song.duration}</div>
-                    </div>
-                    <div class="p-6">
-                        <div class="font-semibold text-xl">${song.title}</div>
-                        <div class="text-pink-400">${song.artist}</div>
-                        <button class="mt-6 w-full py-4 bg-white text-black rounded-3xl font-semibold text-sm tracking-wider">
-                            ABSPIELEN
-                        </button>
-                    </div>
-                </div>`;
-                    container_2.innerHTML += html2
-                }
-            });
-
-        }
-
-        function initAudio() {
-            audio = document.getElementById('audioElement')
-            audio.addEventListener('timeupdate', updateProgress)
-            audio.addEventListener('ended', nextSong)
-            audio.addEventListener('loadedmetadata', () => {
-                document.getElementById('duration').textContent = formatTime(audio.duration)
-            })
-        }
-
-        function playSong(index) {
-            currentSongIndex = index
-            const song = songs[index]
-
-            audio.src = song.url
-            audio.play().then(() => {
-                isPlaying = true
-                updatePlayerUI(song)
-                document.getElementById('globalPlayer').classList.remove('hidden')
-                document.getElementById('globalPlayer').classList.add('flex')
-            })
-        }
-
-        function playFeatured() {
-            playSong(0)
-        }
-
-        function updatePlayerUI(song) {
-            document.getElementById('playerTitle').textContent = song.title
-            document.getElementById('playerArtist').textContent = song.artist
-            document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-pause"></i>`
-        }
-
-        function togglePlay() {
-            if (!audio) return
-            if (isPlaying) {
-                audio.pause()
-                isPlaying = false
-                document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-play"></i>`
-            } else {
-                audio.play()
-                isPlaying = true
-                document.getElementById('playPauseBtn').innerHTML = `<i class="fa-solid fa-circle-pause"></i>`
-            }
-        }
-
-        function nextSong() {
-            currentSongIndex = (currentSongIndex + 1) % songs.length
-            playSong(currentSongIndex)
-        }
-
-        function prevSong() {
-            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length
-            playSong(currentSongIndex)
-        }
-
-        function updateProgress() {
-            if (!audio) return
-            const percent = (audio.currentTime / audio.duration) * 100
-            document.getElementById('progressBar').value = percent || 0
-            document.getElementById('currentTime').textContent = formatTime(audio.currentTime)
-        }
-
-        function formatTime(seconds) {
-            if (!seconds) return '0:00'
-            const min = Math.floor(seconds / 60)
-            const sec = Math.floor(seconds % 60)
-            return `${min}:${sec < 10 ? '0' : ''}${sec}`
-        }
-
-        function toggleMute() {
-            if (!audio) return
-            isMuted = !isMuted
-            audio.muted = isMuted
-            document.getElementById('volumeIcon').className = isMuted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high'
-        }
-
-        function hidePlayer() {
-            if (audio) audio.pause()
-            document.getElementById('globalPlayer').classList.add('hidden')
-        }
-
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu')
-            const icon = document.getElementById('hamburger')
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden')
-                icon.classList.replace('fa-bars', 'fa-xmark')
-            } else {
-                menu.classList.add('hidden')
-                icon.classList.replace('fa-xmark', 'fa-bars')
-            }
-        }
-
-        function handleSubmit(e) {
-            e.preventDefault()
-            alert('✅ Deine Nachricht wurde an DARKLEO gesendet!')
-            e.target.reset()
-        }
-
-        // Start
-        window.onload = () => {
-            renderPlaylist()
-            initAudio()
-
-            // Progress Bar Steuerung
-            document.getElementById('progressBar').addEventListener('input', function () {
-                if (audio) audio.currentTime = (this.value / 100) * audio.duration
-            })
-
-            // Volume
-            document.getElementById('volumeSlider').addEventListener('input', function () {
-                if (audio) audio.volume = this.value / 100
-            })
-        }
     </script>
 </body>
 
