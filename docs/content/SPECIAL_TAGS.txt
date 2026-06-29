@@ -1,0 +1,186 @@
+STYLE:
+[GENRE] + [TEMPO] + [MOOD] + [INSTRUMENT] + [VOCAL STYLE] + [ERA] + [REFERENCE]
+
+
+[bass drop]
+[dubstep drop]
+[Epic beat drop]
+[Break for bass drop]
+[Drop] 
+
+
+
+Structure tags like [Intro], [Verse], [Chorus] control song arrangement
+Suno voice tags specify gender, style, and effects: [Female Vocal], [Whisper], [Reverb]
+Instrument tags highlight specific sounds: [Piano], [808s], [Distorted Guitar]
+Suno style tags for mood and energy shape emotional tone: [Mood: Uplifting], [Energy: High]
+Genre tags anchor musical style with 100+ options from [Synthwave] to [Boom Bap]
+Sound effect tags add ambience: [Applause], [Birds chirping], [Silence]
+Place important Suno tags in the first 20-30 words for maximum impact
+Limit to 2-3 instruments and 1-2 genres to avoid confusion
+Musci.io offers built-in style presets that eliminate Suno metatags guesswork
+
+https://musci.io/blog/suno-tags
+
+
+Structure Tags
+
+[Intro]	Instrumental opening	First 8-16 bars, sets the tone
+[Verse]	Main narrative sections	Storytelling parts of your song
+[Pre-Chorus]	Build-up section	Creates tension before chorus
+[Chorus]	Main hook	Catchy, repeated section
+[Post-Chorus]	Hook extension	Maintains energy after chorus
+[Bridge]	Contrasting section	Mid-song variation, often key change
+[Outro]	Closing section	Wind down and ending
+[Hook]	Catchy melodic phrase	Memorable instrumental or vocal line
+
+Dynamic Structure Tags
+Tag	Purpose	Best For
+[Break]	Stripped-down section	Creating contrast, build-up moments
+[Drop]	High-energy release	EDM, electronic, bass music
+[Buildup]	Tension increase	Before drops or climaxes
+[Fade Out]	Gradual volume decrease	Classic song endings
+[Fade In]	Gradual volume increase	Atmospheric intros
+[Instrumental]	No vocals	Solos, interludes
+[Interlude]	Brief musical passage	Between major sections
+[Solo]	Featured instrument spotlight	Guitar solos, synth leads
+
+
+Gender and Character Tags
+Tag	Description	Use Case
+[Male Vocal]	Male singer	Rock, hip-hop, country
+[Female Vocal]	Female singer	Pop, R&B, folk
+[Male Vocalist]	Alternative phrasing	Same effect as Male Vocal
+[Female Vocalist]	Alternative phrasing	Same effect as Female Vocal
+[Duet]	Two voices alternating	Romantic songs, call-response
+[Choir]	Multiple voices	Gospel, anthems, epic moments
+[Boy]	Young male voice	Youthful character
+[Girl]	Young female voice	Youthful character
+[Man]	Adult male narrator	Spoken word, story songs
+[Woman]	Adult female narrator	Spoken word, story songs
+
+Vocal Style Tags
+Tag	Effect	Genre Fit
+[Whisper]	Soft, intimate delivery	ASMR, intimate ballads
+[Spoken Word]	Talking, not singing	Poetry, intros, hip-hop
+[Rap]	Rhythmic spoken delivery	Hip-hop, trap
+[Harmonies]	Layered vocal parts	Pop, R&B, gospel
+[Falsetto]	High male register	R&B, pop, disco
+[Belting]	Powerful sustained notes	Pop, musical theater
+[Growl]	Aggressive vocal texture	Metal, rock
+[Crooning]	Smooth, intimate style	Jazz, vintage pop
+[Operatic]	Classical vocal technique	Opera, symphonic metal
+[Scat]	Improvised syllables	Jazz
+
+Vocal Effect Tags
+Tag	Effect	Best For
+[Reverb]	Spacious, echoing sound	Ballads, ambient
+[Delay]	Repeated echoes	Dub, experimental
+[AutoTune]	Pitch correction/effect	Modern pop, trap
+[No AutoTune]	Natural pitch	Organic, acoustic styles
+[Distorted Vocals]	Gritty, overdriven	Rock, industrial
+[Filtered Vocals]	Frequency-modified	Lo-fi, phone effect
+[Vocoder]	Robot-like processing	Electronic, synthwave
+[Telephone Effect]	Filtered, narrow	Vintage, transitions
+
+Vocal Emotion Tags
+Tag	Emotional Quality	Song Type
+[Vulnerable]	Raw, exposed emotion	Ballads, confessional
+[Powerful]	Strong, commanding	Anthems, rock
+[Soft]	Gentle, tender	Lullabies, love songs
+[Aggressive]	Intense, forceful	Metal, punk
+[Melancholic]	Sad, wistful	Ballads, indie
+[Joyful]	Happy, celebratory	Pop, party songs
+[Sultry]	Seductive, smooth	R&B, jazz
+[Defiant]	Rebellious, strong	Rock, hip-hop
+
+
+
+Bark
+[announcer] - Used to indicate a section where an announcer is speaking.
+[applause] - Indicates the presence of applause in the background.
+[audience laughing] - Signals that the audience is laughing, useful for live performances or shows.
+[barking] - Use this tag when you want to include the sound of a dog barking.
+[beeping] - To add a beeping sound, like an alarm or notification.
+[bell dings] - Signifies the sound of a bell dinging.
+[birds chirping] - To incorporate the ambiance of birds chirping.
+[bleep] - Indicates a bleep sound, often used to censor words.
+[boy] - Use this tag to specify content delivered by or related to a boy.
+[censored] - Marks content that is censored.
+[cheering] - To include the sound of a crowd cheering.
+[cheers and applause] - Indicates both cheers and applause from an audience.
+[chuckles] - Signifies chuckling sound.
+[clapping] - To add the sound of clapping.
+[clears throat] - Used when someone is clearing their throat.
+[cough] - Indicates a coughing sound.
+[female narrator] - Specifies content narrated by a female.
+[female] - Use this tag for content delivered by or related to a female.
+[fighting] - To include sounds or references to fighting.
+[giggles] - Signifies giggling sounds.
+[giggling] - Another tag for giggling sounds, perhaps in a different context or intensity.
+[girl] - Use this tag to specify content delivered by or related to a girl.
+[groaning] - To add a groaning sound.
+[man] - Use this tag for content delivered by or related to a man.
+[phone ringing] - Indicates the sound of a phone ringing.
+[reporter] - Specifies content delivered by a reporter.
+[ringing] - To add a generic ringing sound.
+[screams] - Signifies screaming sounds.
+[sighs] - Used to include a sighing sound.
+[silence] - Indicates a moment of silence.
+[squawking] - To add the sound of squawking, like a bird or an alarm.
+[upbeat music] - Use this tag to indicate a section with upbeat music.
+[whispers] - Signifies whispering sounds.
+[whistling] - To include a whistling sound.
+[woman] - Use this tag for content delivered by or related to a woman.
+Chirp
+[Chorus] - Indicates the part of the song meant to be the chorus.
+[Intro] - Marks the introduction section of a track.
+[Outro] - Signifies the outro or closing section of the music piece.
+[Verse] - Used to denote the verse part of a song.
+[Acoustic] - Points to an acoustic style of music.
+[African] - Tags the music with African influences or origins.
+[Alternative metal] - Identifies the song as belonging to the alternative metal genre.
+[Alternative pop] - Marks the song as alternative pop in style.
+[Ambient] - For music that has an ambient, atmospheric feel.
+[Atlanta rap] - Denotes rap music that originates from or is styled after Atlanta's rap scene.
+[Ballad] - Marks the piece as a ballad, often slow and emotive.
+[Baroque] - Indicates music influenced by or made in the Baroque style.
+[Blues] - Tags the music as belonging to the blues genre.
+[Boom bap] - Signifies a style of hip-hop that includes hard-hitting beats, often known as Boom bap.
+[Cello] - For pieces that feature the cello.
+[Chill] - Tags music that has a relaxed, chill vibe.
+[Christian & Gospel] - Indicates the music belongs to the Christian & Gospel genres.
+[Christmas] - For music that fits the Christmas holiday theme.
+[Country & Americana] - Marks the music as part of the country or Americana genres.
+[Dance & Electronic] - For music that falls under dance or electronic categories.
+[Drums] - Indicates a focus on or significant use of drums.
+[EDM] - Tags the track as Electronic Dance Music.
+[Girl group] - To denote music by or in the style of a girl group.
+[Gospel] - Marks the piece as gospel music.
+[Hardcore rap] - Indicates a hardcore rap style.
+[Heavy metal] - For music in the heavy metal genre.
+[Hip hop] - Tags the music as hip hop.
+[Indie] - For music that is considered independent or indie in style.
+[Indie rock] - Marks the track as indie rock.
+[J-pop] - For music in the Japanese pop genre.
+[Jazz] - Indicates jazz music.
+[K-pop] - For Korean pop music.
+[Lo-fi] - Tags the music with a lo-fi, understated quality.
+[Orchestra] - Denotes an orchestral music style.
+[Party] - For tracks that set a party mood or vibe.
+[Piano] - Indicates significant use of the piano.
+[Pop] - Tags the track as pop music.
+[Pop-Rock] - For music that blends elements of pop and rock.
+[Post-Hardcore] - Indicates a post-hardcore style in music.
+[Punk Rock] - For music belonging to the punk rock genre.
+[R&B] - Marks the piece as rhythm and blues.
+[R&B & Soul] - Indicates a mix of R&B and soul music.
+[Rap] - Tags the track as rap music.
+[Reggae] - For music with reggae elements.
+[Rock] - Indicates rock music.
+[Romantic] - For music with a romantic theme or tone.
+[Soul] - Marks the track as soul music.
+[Synth] - Denotes a significant use of synthesizers.
+[Synth pop] - For music in the synth-pop style.
+[Techno] - Tags the music as techno.
+[Uk] - Could indicate music from or influenced by the United Kingdom.

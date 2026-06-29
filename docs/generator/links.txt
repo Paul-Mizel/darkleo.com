@@ -1,0 +1,678 @@
+BIG LIST
+https://howtopromptsuno.com/genre-list
+
+
+https://sunoprompt.com/prompt-generator
+
+https://sunometatagcreator.com/metatags-guide
+
+https://www.reddit.com/r/SunoAI/comments/1bva46b/suno_ai_tags/
+
+https://help.suno.com/en/articles/9010177#advanced_concepts
+
+https://blakecrosley.com/guides/suno#the-prompt-architecture
+
+https://sunoaiwiki.com/resources/2024-05-13-list-of-metatags/
+
+[Genre] [Subgenre], [Tempo/Energy], [Key instruments], [Vocal style], [Production quality], [Mood]
+Indie folk rock, mid-tempo, acoustic guitar and mandolin, warm female vocals, lo-fi production, nostalgic and wistful
+
+https://james-palm.medium.com/stop-prompting-suno-ai-start-architecting-it-3754c1df22cd
+
+https://howtopromptsuno.com/style-lyrics/prompt-list-famous-artists
+https://howtopromptsuno.com/genres
+
+
+[Pre-Chorus: Rising Swell, Drum Roll]
+(Lyrics go here...)
+[Chorus: Exploding Energy, Full Band, Anthemic]
+(Lyrics go here...)
+[Post-Chorus: Catchy Hook, Synth Lead]
+(Lyrics go here...)
+[Bridge: Half-Time, Emotional, Stripped Back]
+(Lyrics go here...)
+[Guitar Solo: Screaming, Melodic, 20 seconds]
+[Outro: Fade Out, Echoing Vocals]
+
+
+
+Genres
+
+Rock
+
+Pop
+
+Hip-Hop/Rap
+
+Jazz
+
+Blues
+
+R&B/Soul
+
+Classical
+
+Metal
+
+Electronic
+
+Dance
+
+Country
+
+Folk
+
+Reggae
+
+Punk
+
+Ska
+
+World Music
+
+Indie
+
+New Age
+
+Ambient
+
+Trance
+
+House
+
+Techno
+
+Drum and Bass
+
+Dubstep
+
+Experimental
+
+Lo-Fi
+
+Grunge
+
+Disco
+
+Funk
+
+Gospel
+
+Latin
+
+Opera
+
+Soundtrack
+
+Chillout
+
+Hardcore
+
+Emo
+
+A Cappella
+
+Afrobeat
+
+Alt-Country
+
+Bluegrass
+
+Britpop
+
+Industrial
+
+K-Pop
+
+J-Pop
+
+C-pop
+
+Shoegaze
+
+Surf
+
+Swing
+
+Symphonic
+
+Post-Rock
+
+Post-Punk
+
+Progressive Rock
+
+Psychedelic
+
+Vocal Jazz
+
+Baroque
+
+Flamenco
+
+Folk Rock
+
+Garage Rock
+
+Glam Rock
+
+Gothic
+
+Heavy Metal
+
+IDM (Intelligent Dance Music)
+
+Krautrock
+
+Math Rock
+
+Motown
+
+Noise
+
+Opera Metal
+
+Post-Metal
+
+Power Metal
+
+Psychobilly
+
+Punk Rock
+
+Rap Rock
+
+Reggaeton
+
+Rockabilly
+
+Salsa
+
+Samba
+
+Synthpop
+
+Trip-Hop
+
+Worldbeat
+
+Zouk
+
+
+Style Tags
+
+Acoustic
+
+Electric
+
+Synthesized
+
+Male Vocalist
+
+Female Vocalist
+
+Instrumental
+
+Electronic Production
+
+Analog
+
+Digital
+
+Lo-Fi
+
+Hi-Fi
+
+Live
+
+Studio Recorded
+
+Sampled
+
+Improvised
+
+Arranged
+
+Beat-driven
+
+Melodic
+
+Harmonic
+
+Rhythmic
+
+Fast Tempo
+
+Slow Tempo
+
+Mid-Tempo
+
+Dynamic
+
+Soft
+
+Loud
+
+Minimalistic
+
+Complex
+
+Ambient Sounds
+
+Atmospheric
+
+Conceptual
+
+Experimental
+
+Traditional
+
+Modern
+
+Avant-garde
+
+Nostalgic
+
+Futuristic
+
+Soulful
+
+Emotional
+
+Aggressive
+
+Chill
+
+Dark
+
+Light
+
+Ethereal
+
+Groovy
+
+Funky
+
+Jazzy
+
+Lyrical
+
+Narrative
+
+Political
+
+Romantic
+
+Spiritual
+
+Storytelling
+
+Uplifting
+
+Dreamy
+
+Energetic
+
+Reflective
+
+Soothing
+
+Raw
+
+Polished
+
+Psychedelic
+
+Cinematic
+
+Orchestral
+
+Choir
+
+Solo
+
+Duet
+
+Ensemble
+
+Acapella
+
+Cover
+
+Remix
+
+Mashup
+
+Extended Mix
+
+Radio Edit
+
+Live Version
+
+Unplugged
+
+
+Additional Genres
+
+Alt-Rock
+
+Black Metal
+
+Celtic
+
+Chillwave
+
+Crunk
+
+Dark Ambient
+
+Death Metal
+
+Drone
+
+Dub
+
+EDM (Electronic Dance Music)
+
+Electro Swing
+
+Eurodance
+
+Folk Metal
+
+Funk Metal
+
+G-Funk
+
+Glitch Hop
+
+Grime
+
+Hardcore Punk
+
+Hardstyle
+
+Horrorcore
+
+IDM (Intelligent Dance Music)
+
+Indie Folk
+
+Indie Pop
+
+Industrial Metal
+
+Italo Disco
+
+J-Rock
+
+Lo-fi Hip Hop
+
+Mumble Rap
+
+Neo-Soul
+
+New Romantic
+
+Nu Metal
+
+Nu Jazz
+
+Outlaw Country
+
+Post-Disco
+
+Post-Hardcore
+
+Progressive Metal
+
+Psytrance
+
+Raga Rock
+
+Ragtime
+
+Ranchera
+
+Shoegaze
+
+Ska Punk
+
+Sludge Metal
+
+Smooth Jazz
+
+Southern Rock
+
+Space Rock
+
+Speed Metal
+
+Stoner Rock
+
+Sunshine Pop
+
+Synthwave
+
+Techno Pop
+
+Thrash Metal
+
+Trap
+
+Tribal House
+
+Vaporwave
+
+Viking Metal
+
+Visual Kei
+
+West Coast Rap
+
+Witch House
+
+Wonky
+
+
+Additional Style Tags
+
+Acapella
+
+Bass-heavy
+
+Binaural
+
+Bitcrushed
+
+Bouncy
+
+Breakbeat
+
+Bright
+
+Celestial
+
+Chamber
+
+Chillhop
+
+Chiptune
+
+Choral
+
+Classic
+
+Collage
+
+Country-infused
+
+Cross-genre
+
+Cut-up
+
+Danceable
+
+Deep Bass
+
+Downtempo
+
+Drone
+
+Eclectic
+
+Edgy
+
+Electronic Influenced
+
+Euphoric
+
+Experimental Electronic
+
+Faded
+
+Feel-good
+
+Field Recordings
+
+Fuzzy
+
+Glitch
+
+Haunting
+
+Heavy
+
+High Energy
+
+Hypnotic
+
+Improvisational
+
+Indie Influenced
+
+Industrial Sound
+
+Layered
+
+Lofi Aesthetic
+
+Looped
+
+Lush
+
+Melancholic
+
+Metallic
+
+Microtonal
+
+Minimalist
+
+Mysterious
+
+Neo-classical
+
+Noise Pop
+
+Offbeat
+
+Organic
+
+Overdriven
+
+Phased
+
+Pioneering
+
+Plaintive
+
+Plucky
+
+Progressive
+
+Pulsating
+
+Rebellious
+
+Refined
+
+Retro
+
+Reverberated
+
+Riff-heavy
+
+Satirical
+
+Serrated
+
+Silky
+
+Sizzling
+
+Skittering
+
+Slick
+
+Sludgy
+
+Smooth
+
+Snappy
+
+Sonic
+
+Soul-touching
+
+Sound Collage
+
+Spacey
+
+Sparse
+
+Spectral
+
+Spiky
+
+Spirited
+
+Spooky
+
+Sputtering
+
+Staccato
+
+Steamy
+
+Stellar
+
+Street
+
+Subdued
+
+Surreal
+
+Swampy
+
+Sweet
+
+Swinging
+
+Synthetic
+
+Tape
+
+Textural
+
+Thematic
+
+Thrilling
+
+Thunderous
+
+Tonal
+
+Transcendent
+
+Tropical

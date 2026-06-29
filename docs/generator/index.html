@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNO Tag & Style Generator</title>
+    <meta name="description" content="SUNO Prompt Generator - Struktur + Style">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+
+        :root {
+            --primary: 234 179 8;
+        }
+
+        .tail-container {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        .logo-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .tag-btn {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .tag-btn.active {
+            background-color: rgb(190 24 24);
+            color: white;
+            border-color: rgb(190 24 24);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a001f 100%);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgb(190 24 24),
+                        0 0 20px rgb(190 24 24);
+        }
+    </style>
+</head>
+<body class="gradient-bg bg-zinc-950 tail-container text-zinc-100 min-h-screen">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+            <div class="px-6 py-5 flex items-center justify-between">
+                <div class="flex items-center gap-x-4">
+                    <i class="fa-solid fa-bolt text-4xl text-red-700"></i>
+                    <div>
+                        <h1 class="logo-font text-4xl tracking-tighter font-bold neon-text">SUNO GEN</h1>
+                        <p class="text-xs text-zinc-500 -mt-1">Tag & Style Builder</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center gap-x-8">
+                    <button onclick="switchTab(0)" id="tab-0"
+                            class="tab-btn px-6 py-2 rounded-2xl font-medium flex items-center gap-x-2 active">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Struktur</span>
+                    </button>
+                    <button onclick="switchTab(1)" id="tab-1"
+                            class="tab-btn px-6 py-2 rounded-2xl font-medium flex items-center gap-x-2">
+                        <i class="fa-solid fa-palette"></i>
+                        <span>Style</span>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-x-3">
+                    <button onclick="copyToClipboard()" 
+                            class="flex items-center gap-x-2 bg-red-700 hover:bg-red-600 px-6 py-3 rounded-2xl font-semibold transition-colors">
+                        <i class="fa-solid fa-copy"></i>
+                        <span>In Zwischenablage</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="flex">
+            <!-- Main Content -->
+            <main class="flex-1 p-8">
+                <!-- STRUCTURE TAB -->
+                <div id="structure-tab">
+                    <div class="flex justify-between items-end mb-8">
+                        <div>
+                            <h2 class="text-4xl font-bold tracking-tight">Song Struktur</h2>
+                            <p class="text-zinc-400">Baue deine Songstruktur mit Tags</p>
+                        </div>
+                        
+                        <div class="flex gap-x-3">
+                            <button onclick="toggleVocalMode()" id="vocal-btn"
+                                    class="px-5 py-2.5 rounded-2xl border border-red-700 text-red-700 hover:bg-red-950 flex items-center gap-x-2 font-medium">
+                                <i class="fa-solid fa-microphone"></i>
+                                <span>Vocal</span>
+                            </button>
+                            <button onclick="toggleVocalMode()" id="inst-btn"
+                                    class="px-5 py-2.5 rounded-2xl border border-zinc-700 hover:bg-zinc-800 flex items-center gap-x-2 font-medium">
+                                <i class="fa-solid fa-drum"></i>
+                                <span>Instrumental</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- Categories -->
+                        <div class="lg:col-span-2 space-y-8">
+                            <!-- Main Structure -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4 flex items-center gap-x-2">
+                                    <i class="fa-solid fa-list-ol text-red-700"></i>
+                                    Hauptstruktur
+                                </h3>
+                                <div id="main-structure-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <!-- Vocal / Additional -->
+                            <div id="vocal-section">
+                                <h3 class="text-lg font-semibold mb-4 flex items-center gap-x-2">
+                                    <i class="fa-solid fa-microphone text-red-700"></i>
+                                    Stimme & Effekte
+                                </h3>
+                                <div id="vocal-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <!-- Instrumental Extras -->
+                            <div id="inst-section" class="hidden">
+                                <h3 class="text-lg font-semibold mb-4 flex items-center gap-x-2">
+                                    <i class="fa-solid fa-guitar text-red-700"></i>
+                                    Instrumentale Elemente
+                                </h3>
+                                <div id="inst-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Preview -->
+                        <div class="bg-zinc-900 rounded-3xl p-6 border border-zinc-800">
+                            <h3 class="font-medium mb-4 flex items-center gap-x-2">
+                                <i class="fa-solid fa-eye"></i>
+                                Vorschau
+                            </h3>
+                            <div id="structure-preview" 
+                                 class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 min-h-[300px] text-sm leading-relaxed whitespace-pre-wrap font-mono text-amber-300">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STYLE TAB -->
+                <div id="style-tab" class="hidden">
+                    <h2 class="text-4xl font-bold tracking-tight mb-8">Style & Produktion</h2>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2 space-y-10">
+                            <!-- Genre -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Genre</h3>
+                                <div id="genre-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <!-- Mood -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Stimmung</h3>
+                                <div id="mood-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+
+                            <!-- BPM + Decade -->
+                            <div class="grid grid-cols-2 gap-8">
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-4">BPM</h3>
+                                    <div id="bpm-tags" class="flex flex-wrap gap-2"></div>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold mb-4">Jahrzehnt</h3>
+                                    <div id="decade-tags" class="flex flex-wrap gap-2"></div>
+                                </div>
+                            </div>
+
+                            <!-- Instruments -->
+                            <div>
+                                <h3 class="text-lg font-semibold mb-4">Instrumente</h3>
+                                <div id="instrument-tags" class="flex flex-wrap gap-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Style Preview -->
+                        <div class="bg-zinc-900 rounded-3xl p-6 border border-zinc-800">
+                            <h3 class="font-medium mb-4">Style Vorschau</h3>
+                            <div id="style-preview" 
+                                 class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 min-h-[420px] text-sm leading-relaxed whitespace-pre-wrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-zinc-900 border-t border-zinc-700 py-4 z-50">
+        <div class="max-w-7xl mx-auto px-8 flex items-center justify-between text-sm">
+            <div class="flex items-center gap-x-8 text-zinc-400">
+                <div onclick="clearAll()" class="cursor-pointer hover:text-white flex items-center gap-x-2">
+                    <i class="fa-solid fa-trash"></i>
+                    <span>Zurücksetzen</span>
+                </div>
+                <div id="tag-count" class="text-zinc-500">0 Tags ausgewählt</div>
+            </div>
+            
+            <div id="final-prompt" 
+                 class="font-mono text-xs bg-zinc-950 border border-zinc-800 px-6 py-3 rounded-2xl max-w-xl truncate">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ==================== DATA ====================
+        const structureData = {
+            main: [
+                "Intro", "Verse 1", "Pre-Chorus", "Chorus", "Hook", "Drop", 
+                "Verse 2", "Bridge", "Break", "Build-up", "Outro", "Final Chorus"
+            ],
+            vocal: [
+                "Male Vocals", "Female Vocals", "Rap", "Singing", "Harmonies", 
+                "Whispering", "Shouting", "Auto-Tune", "Melodic Rap", "Emotional Vocals"
+            ],
+            instrumental: [
+                "Synth Lead", "Heavy Bass", "808s", "Trap Drums", "Guitar Solo", 
+                "Piano", "Ambient Pads", "Arpeggio", "Glitch Effects", "Cinematic"
+            ]
+        }
+
+        const styleData = {
+            genres: ["Electronic", "Hip-Hop", "House", "Techno", "Trap", "Pop", "Rock", "R&B", "Ambient", "Future Bass", "Phonk", "Drum & Bass"],
+            moods: ["Dark", "Energetic", "Melancholic", "Dreamy", "Aggressive", "Chill", "Uplifting", "Nostalgic", "Futuristic"],
+            bpm: ["80-90 BPM", "90-100 BPM", "100-110 BPM", "110-120 BPM", "120-130 BPM", "130-140 BPM", "140-150 BPM", "Fast 160+"],
+            decades: ["80s", "90s", "2000s", "2010s", "Modern", "Retro"],
+            instruments: ["Synthwave", "Deep Bass", "Acoustic Guitar", "Electric Guitar", "Saxophone", "Violin", "Drum Machine", "Orchestral", "Lo-Fi", "Hyperpop"]
+        }
+
+        // ==================== STATE ====================
+        let currentTab = 0
+        let isVocalMode = true
+        let selectedTags = new Set()
+
+        // ==================== TAILWIND INIT ====================
+        function initTailwind() {
+            // Already loaded via CDN
+        }
+
+        // ==================== RENDER FUNCTIONS ====================
+        function renderMainStructure() {
+            const container = document.getElementById('main-structure-tags')
+            container.innerHTML = ''
+            
+            structureData.main.forEach(tag => {
+                const btn = createTagButton(tag, 'main')
+                container.appendChild(btn)
+            })
+        }
+
+        function renderVocalTags() {
+            const container = document.getElementById('vocal-tags')
+            container.innerHTML = ''
+            structureData.vocal.forEach(tag => {
+                const btn = createTagButton(tag, 'vocal')
+                container.appendChild(btn)
+            })
+        }
+
+        function renderInstTags() {
+            const container = document.getElementById('inst-tags')
+            container.innerHTML = ''
+            structureData.instrumental.forEach(tag => {
+                const btn = createTagButton(tag, 'inst')
+                container.appendChild(btn)
+            })
+        }
+
+        function renderStyleTags() {
+            // Genre
+            const genreCont = document.getElementById('genre-tags')
+            genreCont.innerHTML = ''
+            styleData.genres.forEach(tag => {
+                genreCont.appendChild(createTagButton(tag, 'genre'))
+            })
+
+            // Mood
+            const moodCont = document.getElementById('mood-tags')
+            moodCont.innerHTML = ''
+            styleData.moods.forEach(tag => {
+                moodCont.appendChild(createTagButton(tag, 'mood'))
+            })
+
+            // BPM
+            const bpmCont = document.getElementById('bpm-tags')
+            bpmCont.innerHTML = ''
+            styleData.bpm.forEach(tag => {
+                bpmCont.appendChild(createTagButton(tag, 'bpm'))
+            })
+
+            // Decade
+            const decadeCont = document.getElementById('decade-tags')
+            decadeCont.innerHTML = ''
+            styleData.decades.forEach(tag => {
+                decadeCont.appendChild(createTagButton(tag, 'decade'))
+            })
+
+            // Instruments
+            const instCont = document.getElementById('instrument-tags')
+            instCont.innerHTML = ''
+            styleData.instruments.forEach(tag => {
+                instCont.appendChild(createTagButton(tag, 'instrument'))
+            })
+        }
+
+        function createTagButton(text, category) {
+            const btn = document.createElement('button')
+            btn.className = `tag-btn px-5 py-2.5 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-2xl text-sm font-medium`
+            btn.textContent = text
+            btn.onclick = () => toggleTag(text, btn)
+            return btn
+        }
+
+        function toggleTag(tag, btnElement) {
+            if (selectedTags.has(tag)) {
+                selectedTags.delete(tag)
+                btnElement.classList.remove('active')
+            } else {
+                selectedTags.add(tag)
+                btnElement.classList.add('active')
+            }
+            updatePreview()
+        }
+
+        function toggleVocalMode() {
+            isVocalMode = !isVocalMode
+            
+            const vocalBtn = document.getElementById('vocal-btn')
+            const instBtn = document.getElementById('inst-btn')
+            
+            if (isVocalMode) {
+                vocalBtn.classList.add('border-red-700', 'text-red-700')
+                instBtn.classList.remove('border-red-700', 'text-red-700')
+                document.getElementById('vocal-section').classList.remove('hidden')
+                document.getElementById('inst-section').classList.add('hidden')
+            } else {
+                instBtn.classList.add('border-red-700', 'text-red-700')
+                vocalBtn.classList.remove('border-red-700', 'text-red-700')
+                document.getElementById('vocal-section').classList.add('hidden')
+                document.getElementById('inst-section').classList.remove('hidden')
+            }
+            updatePreview()
+        }
+
+        function switchTab(tab) {
+            currentTab = tab
+            
+            document.getElementById('structure-tab').classList.toggle('hidden', tab !== 0)
+            document.getElementById('style-tab').classList.toggle('hidden', tab !== 1)
+            
+            // Update active tab
+            document.querySelectorAll('.tab-btn').forEach((el, i) => {
+                el.classList.toggle('active', i === tab)
+            })
+            
+            updatePreview()
+        }
+
+        function updatePreview() {
+            const structurePreview = document.getElementById('structure-preview')
+            const stylePreview = document.getElementById('style-preview')
+            const finalPromptEl = document.getElementById('final-prompt')
+            
+            let structureText = ''
+            let styleText = ''
+            
+            if (currentTab === 0) {
+                // Structure preview
+                const sortedTags = Array.from(selectedTags).sort()
+                structureText = sortedTags.join(' | ')
+                structurePreview.textContent = structureText || "[Keine Tags ausgewählt]"
+            } else {
+                // Style preview
+                const sortedTags = Array.from(selectedTags).sort()
+                styleText = sortedTags.join(', ')
+                stylePreview.textContent = styleText || "[Keine Style-Tags ausgewählt]"
+            }
+            
+            // Final combined prompt
+            const allTags = Array.from(selectedTags)
+            let finalPrompt = allTags.join(', ')
+            if (isVocalMode && currentTab === 0) {
+                finalPrompt = "[Vocal] " + finalPrompt
+            } else if (!isVocalMode && currentTab === 0) {
+                finalPrompt = "[Instrumental] " + finalPrompt
+            }
+            
+            finalPromptEl.textContent = finalPrompt || "Noch keine Tags..."
+            document.getElementById('tag-count').textContent = `${selectedTags.size} Tags ausgewählt`
+        }
+
+        function clearAll() {
+            selectedTags.clear()
+            
+            // Reset all buttons
+            document.querySelectorAll('.tag-btn').forEach(btn => {
+                btn.classList.remove('active')
+            })
+            
+            updatePreview()
+        }
+
+        async function copyToClipboard() {
+            const finalPrompt = document.getElementById('final-prompt').textContent
+            if (!finalPrompt || finalPrompt.includes("Noch keine")) {
+                alert("Keine Tags ausgewählt!")
+                return
+            }
+            
+            try {
+                await navigator.clipboard.writeText(finalPrompt)
+                const origText = document.querySelector('button[onclick="copyToClipboard()"] span').textContent
+                const btn = document.querySelector('button[onclick="copyToClipboard()"]')
+                btn.innerHTML = `<i class="fa-solid fa-check"></i> <span>Kopiert!</span>`
+                setTimeout(() => {
+                    btn.innerHTML = `<i class="fa-solid fa-copy"></i> <span>In Zwischenablage</span>`
+                }, 2000)
+            } catch(e) {
+                alert("Fehler beim Kopieren")
+            }
+        }
+
+        // ==================== INITIALIZE ====================
+        function initializeApp() {
+            renderMainStructure()
+            renderVocalTags()
+            renderInstTags()
+            renderStyleTags()
+            
+            // Default vocal mode
+            toggleVocalMode()
+            
+            // Show structure tab first
+            switchTab(0)
+            
+            // Demo selection
+            setTimeout(() => {
+                // Select some demo tags
+                const demoTags = ["Intro", "Verse 1", "Chorus", "Drop", "Dark", "Electronic", "110-120 BPM"]
+                demoTags.forEach(tag => {
+                    selectedTags.add(tag)
+                })
+                updatePreview()
+            }, 600)
+        }
+
+        window.onload = initializeApp
+    </script>
+</body>
+</html>
