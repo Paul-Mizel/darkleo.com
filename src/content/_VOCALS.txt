@@ -1,0 +1,59 @@
+
+1. Пепельный сип старого шамана (Ультра-низкий / Этнический)
+Вайб: Шаманский, глубокий, первобытный вокал дикого кочевника, потрепанный временем и ритуальным дымом.
+Plaintext
+ancient throat-singing guttural voice, low-frequency tribal gravelly baritone, weathered nomadic rasp, dry smoke-worn texture, deep chest resonance, subharmonic low-end vocal fry, raw mystic close-mic delivery, hypnotic archaic masculine presence
+
+
+2. Кинематографичный безумный киборг (Экспериментальный / Sci-Fi)
+Вайб: Наполовину человек, наполовину сломанная машина. Голос двоится, вибрирует и звучит футуристично.
+Plaintext
+glitchy cybernetic male tenor, digitized vocoder harmonics, fragmented synthetic vocal fry, metallic resonant distortion, cold robotic speech-singing, modulated artificial intelligence tone, eerie spacey delay, haunting post-human presence
+
+3. Хрустальный эльфийский сопрано-соул (Ультра-высокий / Чистый)
+Вайб: Невесомый, парящий, чистейший женский вокал. Голос звучит как струящаяся ледяная вода.
+Plaintext
+piercing ethereal operatic soprano, crystal-clear angelic falsetto, breathy cinematic vocal runs, reverb-drenched spacey tone, hyper-clean whistle register, soaring melancholic female voice, intimate breathtaking purity, divine haunting presence
+
+4. Прокуренный блюзовый нуар-винил (Винтажный / Джазовый)
+Вайб: Голос томной джазовой дивы из задымленного подвала 1940-х годов. Хриплый, уставший, безумно сексуальный.
+Plaintext
+smoky vintage jazz-diva contralto, heavy cigarette-burned velvet rasp, dynamic retro microphone warmth, emotional slurred delivery, slow sensual low-pitched female vocals, vinyl crackle mid-range texture, nostalgic authentic blues grit
+
+5. Безумный глэм-рок фрик (Экстремальный / Высокий)
+Вайб: Истеричный, театральный, пронзительный вокал на грани безумия в стиле рок-опер или глэм-металла.
+Plaintext
+intense emotional hysteria, piercing theatrical male tenor, razor-sharp rock belt screams, shattered glass vocal distortion, banshee screech, aggressive high-end vocal fry, manic expressive delivery, operatic wild rock presence
+
+6. Уличный лоу-фай хрип (Современный хип-хоп / Меланхоличный)
+Вайб: Парень читает или напевает прямо в микрофон старого кассетного плеера. Очень интимный, «грязный» и честный звук.
+Plaintext
+muffled lofi bedroom-pop male vocals, dry casual speech-singing, low-fidelity cassette tape saturation, warm mid-range vocal fry, intimate close-up amateur delivery, deadpan emotionally detached tone, lazy realistic street voice
+
+7. Кельтская ведьма (Фолк / Мистический)
+Вайб: Сильный, грудной, вибрирующий женский вокал с этническими переливами и мистическим эхом древних лесов.
+Plaintext
+haunting Celtic folk mezzo-soprano, sharp piercing chest-voice, heavy ethnic vibrato, pagan ritualistic chanting, raw unpolished female vocals, dry outdoor acoustics, sharp historic storytelling presence, mystical sharp tone
+
+8. Детский хор мертвецов / Тёмный шёпот (Хоррор / Атмосферный)
+Вайб: Зловещий, жуткий, затихающий шёпот, переходящий в жуткое детское или андрогинное пение.
+Plaintext
+creepy androgynous child-like whisper, layered ghostly unison, cold deadpan vocal delivery, eerie dual-tone harmonizer, frightening close-mic breathing, cinematic horror-movie presence, spine-chilling innocent yet dark vocals
+
+
+9. Латиноамериканский страстный тенор (Яркий / Мелодичный)
+Вайб: Плотный, «солнечный», невероятно подвижный мужской вокал с мелкой дрожью (вибрато) и жгучей экспрессией.
+Plaintext
+vibrant flamenco male tenor, high-pitched rapid vocal vibrato, passionate expressive latino belts, warm sun-drenched acoustics, sharp rhythmic acoustic-guitar-driven delivery, clear heroic masculine voice, emotional Spanish flair
+
+
+10. Пыльный фолк-дедушка (Акустический / Кантри)
+Вайб: Голос 80-летнего старика, рассказывающего историю у костра. Дрожащий, сухой, но бесконечно мудрый.
+Plaintext
+fragile trembling old-man voice, ultra-dry parched throat texture, authentic senior citizen crackle, emotional shaky delivery, acoustic folk storyteller baritone, raw imperfect human warmth, nostalgic wise masculine presence
+
+💡 Совет по использованию в Suno:
+Выбирай один из этих блоков и вставляй его в поле Style of Music целиком. Не смешивай их между собой (например, «old-man» и «operatic soprano»), иначе нейросеть запутается и выдаст стандартный средний голос.
+
+
+
