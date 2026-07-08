@@ -1,0 +1,91 @@
+aggressive male vocals, strict rap flow, Strained vocals, airy vocals, Rap pronunciation while exhaling, Nasal pronunciation
+
+
+
+
+Put the vocal description first in the Style prompt — Suno weights it heavier.
+In lyrics, use tags like: [Rap], [Aggressive Rap], [Verse 1 - strained], [Fast Flow].
+If it's too clean, add: raw, no autotune, gritty.
+If it's not nasal enough, reinforce with nasal tone or nasal rap pronunciation.
+
+Option 1 (Raw & Aggressive – Recommended):
+textaggressive male rap, raw gritty strained vocals, breathy exhale delivery, nasal rap tone, tight strict flow, intense precise articulation, dark trap energy
+Option 2 (More controlled but still hard):
+textaggressive male rap vocals, gritty raspy voice with nasal edge, strained breathy delivery, strict rhythmic flow, raw street rap energy
+Option 3 (If you want it extra intense):
+texthard aggressive male rap, raw throat strained vocals, nasal aggressive flow, breathy exhales on d
+
+
+
+classic russian hip-hop, late 2000s boom-bap beat, dark melancholic piano loop, deep raw male vocals, storytelling rap, serious stoic tone, gritty vinyl crackle, 90 BPM
+
+1990s underground russian rap, melancholic piano loop, emotional raw male vocals, heavy slow boom-bap beat, street poetry, deep bass, nostalgic gritty vinyl texture, 85 BPM
+
+
+
+classic russian hip-hop, late 2000s boom-bap beat, dark melancholic piano loop, 
+deep raw male vocals, strict rap flow, Strained vocals, airy vocals, Rap pronunciation while exhaling, Nasal pronunciation
+storytelling rap, serious stoic tone, gritty vinyl crackle, 90 BPM, raw street vibe
+
+
+
+russian hip hop, boom bap, 100 BPM, mid-tempo, aggressive male vocals, strict rap flow, 
+punchy rhythmic beat, heavy bass, clear production, studio master, high fidelity, piano
+
+
+
+nostalgic storytelling boom bap rap, mid tempo around 85 bpm, calm conversational male rap flow similar to classic russian hip hop storytelling, warm vinyl style drums, mellow piano chords, deep bassline, reflective and slightly humorous mood, focus on narrative lyrics
+
+
+
+STYLE: old school Russian rap, underground hip-hop, raw street vibe
+
+GENRE:
+classic Russian hip-hop, boom bap, minimal trap elements
+
+TEMPO:
+85–95 BPM
+
+KEY:
+minor (D minor / F minor)
+
+DRUMS:
+hard boom bap drums
+punchy kick, dry snare
+simple hi-hats, no trap rolls
+
+BASS:
+deep, warm, slightly dirty bassline
+no aggressive 808 slides
+
+MELODY:
+minimal piano loops
+dark atmospheric pads
+vinyl crackle texture
+sample-based vibe (nostalgic, melancholic)
+
+VOCALS:
+male rap, Russian language
+no singing
+no autotune
+no melodic hooks
+dry, confident, slightly aggressive delivery
+clear articulation, storytelling flow
+
+FLOW:
+classic rap flow, mid-tempo
+rhythmic, conversational
+no mumble, no stretching vowels
+
+MOOD:
+street, introspective, honest
+melancholic, reflective, raw
+
+STRUCTURE:
+[Intro – spoken or ambient]
+[Verse 1 – 16 bars]
+[Hook – short, spoken or rhythmic, no singing]
+[Verse 2 – 16 bars]
+[Outro – fade or spoken line]
+
+
